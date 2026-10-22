@@ -5,6 +5,8 @@ VB6のように部品を配置して画面を作り、生成物をソースコ�
 
 現在は初期構想の整理段階です。実装済み製品、承認済み要件、正式BaselineまたはCodexへの作業指示ではありません。
 
+- [進捗一覧・次の作業](planning/progress.md)
+- [全体追跡Issue](https://github.com/kosaru/NyanRAD/issues/1)
 - [構想・前提・未決定事項](planning/requests/DR-NYANRAD-001/discussion-summary.md)
 - [VB6との対応表・生成ソース例](planning/requests/DR-NYANRAD-001/vb6-nyan-mapping.md)
 - [内部受付記録](planning/requests/DR-NYANRAD-001/request.yaml)
