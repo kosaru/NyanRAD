@@ -153,3 +153,12 @@ NyanRADの画面と管理処理はHTML・CSS・JavaScriptで構築する。OS側
 HTML・CSS・JavaScriptと要求者提供のNyanQL群実行ファイルの前提を維持する。実行管理の技術成立・動作実証、追加実行ファイルの採用、正式Baseline・実装開始は今回の了承に含めない。
 
 判断対象：[実行・停止の動作案](https://github.com/kosaru/NyanRAD/blob/84eb8c56873f902be7c1aad72db27cf432cf8c45/planning/requirements/16-run-lifecycle.md)。関連資料へ同期。
+
+## 初回DB範囲の人間判断
+
+要求者は「SQLiteを既定にし、SQLite・DuckDBの両方で基本CRUDを確認し、直接接続とNyan8経由を対象にする」案に対し、「はい。それで進めましょう。」と回答した。
+初回はB案を採用し、SQLiteを既定とする。SQLite・DuckDBそれぞれで登録・参照・更新・削除を、直接接続とNyan8経由の両経路で確認する。
+同じSQL本文の互換保証、DB間変換、DB自動初期化・移行、IDE管理情報のDB必須保存は追加しない。
+この判断は初回DB対応範囲であり、受入条件案全体・動作検証成功・正式Releaseの承認ではない。
+
+DB資料・受入条件・受付記録・進捗へ同期。正式Baseline・実装開始は未成立。
