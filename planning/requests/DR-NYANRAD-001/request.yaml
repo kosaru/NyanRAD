@@ -4,7 +4,7 @@ development_request:
   title: NyanQL群のソースコードを生成するブラウザ型ビジュアル開発環境
   status: exploring
   requester_intent:
-    statement: VB6のようにポトペタで画面を作り、生成物をソースコードとし、NyanQLフレームワーク群の体裁を保ちたい
+    statement: NyanQLフレームワーク群をVB6のような統合開発環境で使えるようにする。ブラウザでポトペタ編集でき、生成物は同群の体裁を保ったソースコードとする
   background:
     current_situation:
       - 要求者がkosaru/NyanRADを作成した
@@ -27,7 +27,7 @@ development_request:
   dependencies:
     - NyanQLフレームワーク群（採用製品とバージョンは未決定）
   unknowns:
-    - 利用者、具体的な対象業務、成功指標
+    - 共有利用等の利用条件と成功指標（特定業務アプリへの限定は前提としない）
     - 初期版の詳細範囲と対象外
     - 生成形式、追加依存、手編集後の再編集範囲
     - 開発言語、配置方式、対応環境
