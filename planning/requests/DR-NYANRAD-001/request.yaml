@@ -25,7 +25,7 @@ development_request:
       - ブラウザ上のVB6風画面作成とソースコード生成という構想
       - NyanPUI・Nyan8・NyanQLを扱う開発環境
       - NyanPUIからNyanQLへの直接接続とNyan8経由の接続
-      - まずNyanQL内蔵DBを利用する方向（SQLite・DuckDBを検討）
+      - SQLiteを既定とし、SQLite・DuckDBの両方で基本CRUDと直接・Nyan8経由の両接続を確認する
       - initial-scope-options.mdの初回候補を検討の軸とする
     excluded:
       - initial-scope-options.mdの後続候補を初回対象外の検討の軸とする（詳細は要件定義で具体化）
@@ -40,7 +40,7 @@ development_request:
   unknowns:
     - 共有利用等の利用条件と定量的な成功指標（特定業務アプリへの限定は前提としない）
     - 初期版の詳細範囲と対象外
-    - 既定DB、SQLite・DuckDBの初回対応範囲、実行ファイルの版と配置
+    - 採用DBの検証用データ・SQL、実行ファイルの版と配置
     - 生成形式、追加依存、手編集後の再編集範囲
     - 開発言語、配置方式、macOSの最低版・CPU構成・対応ブラウザ
     - ローカルでの保存方式、実行権限、公開方法
