@@ -71,3 +71,10 @@ NyanPUI→NyanQLとNyanPUI→Nyan8→NyanQLの両構成、実行ファイルの�
 - 未決定事項：request.yamlと比較案に列挙済み。
 
 ChatGPTの受付条件評価によりexploringからcandidateへ移行する。これは要件定義着手の判断材料が揃った状態。要件定義着手の人間判断、正式Baseline、実装開始は未成立。
+
+## 要件定義着手の人間判断
+
+要求者の明示指示：「はいお願いします。要件定義着手してください。」
+受付状態をcandidateからapproved-for-requirementsへ変更し、人間向け工程「要件定義、その前に」から開始した。
+企画確認書の初稿を作成。既存の合意と未決定事項を引き継ぎ、内容の正式承認・Baseline・実装開始は成立させない。
+進行はIssue #3で追跡する。
