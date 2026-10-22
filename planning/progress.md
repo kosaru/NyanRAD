@@ -13,7 +13,7 @@
 | 初期構想・判断の保存 | 完了 | [議論の整理](requests/DR-NYANRAD-001/discussion-summary.md)、[判断履歴](requests/DR-NYANRAD-001/decision-log.md) |
 | VB6とNyanQL群の対応調査 | 比較資料作成済み | [対応資料](requests/DR-NYANRAD-001/vb6-nyan-mapping.md) |
 | 初期範囲・対象外の比較と着手判断材料 | 着手判断記録済み | [Issue #2](https://github.com/kosaru/NyanRAD/issues/2) |
-| 人間向け要件定義 | 準備編進行中・技術比較案作成済み／管理方式の判断待ち | [準備編 Issue #3](https://github.com/kosaru/NyanRAD/issues/3) |
+| 人間向け要件定義 | 準備編進行中・ローカル方針確認済み・既存機能の成立条件を調査 | [準備編 Issue #3](https://github.com/kosaru/NyanRAD/issues/3) |
 | 正式Baseline・実装引渡し | 未着手 | 要件定義と正式判断の後 |
 | 設計・実装・テスト・内部レビュー | 未着手 | 正式なWork Requestの後 |
 | 初回正式リリース | 未着手 | 人間の正式受入の後 |
@@ -23,7 +23,7 @@
 ## 次に進める内容
 
 [初期範囲の比較案](requests/DR-NYANRAD-001/initial-scope-options.md)を作成済み。初回候補と後続候補を検討の軸とする人間の了承を記録済み。
-対象利用者・困り事・改善方向の人間確認を反映済み。要件定義着手の明示判断を記録済み。[企画確認書](requirements/01-project-brief.md)を材料に、[全体像](requirements/02-overview.md)と[大まかな区分](requirements/03-areas.md)を作成済み。[技術比較案](requirements/04-technology-options.md)を作成済み。利用場所（ローカル／共有）と管理方式（Nyan8＋OS処理／専用管理サービス）の選択が次の判断対象。
+対象利用者・困り事・改善方向の人間確認を反映済み。要件定義着手の明示判断を記録済み。[企画確認書](requirements/01-project-brief.md)を材料に、[全体像](requirements/02-overview.md)と[大まかな区分](requirements/03-areas.md)を作成済み。[技術比較案](requirements/04-technology-options.md)を作成済み。利用場所はローカルを基本とする。[既存機能の成立条件](requirements/04a-local-feasibility.md)を調査済み。保存機能は既存基盤にあり、追加バイナリは未採用。次は対象OSと常駐プロセス管理の成立条件を具体化する。
 
 ## 更新方法
 
@@ -48,3 +48,5 @@
 - 2026-10-22：企画を材料に全体像・情報の流れを図示。その後、大まかな４区分と依存を整理。両文書は初稿であり正式承認前。
 
 - 2026-10-22：現行ソースで保存・実行管理の技術を調査し比較案を作成。Nyan8のホストコマンド実行と常駐プロセス管理を区別。採用方式は未決定。
+
+- 2026-10-22：ローカル方針を記録。PUI・QLの保存機能を追加確認し、既存機能を先に調べる方針で調査資料を保存。OS別実証は未実施。
