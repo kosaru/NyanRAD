@@ -1,0 +1,54 @@
+# 内部受付記録。正式要件・実装指示ではない。
+development_request:
+  request_id: DR-NYANRAD-001
+  title: NyanQL群のソースコードを生成するブラウザ型ビジュアル開発環境
+  status: exploring
+  requester_intent:
+    statement: VB6のようにポトペタで画面を作り、生成物をソースコードとし、NyanQLフレームワーク群の体裁を保ちたい
+  background:
+    current_situation:
+      - 要求者がkosaru/NyanRADを作成した
+      - ブラウザ上で動くVB6に近い開発環境を検討している
+    problem:
+      - 要求者はAccess型の仕組みには敷居の高さを感じている
+      - 現在の作業で生じている具体的な問題は未確認
+  target_users: []
+  expected_change:
+    - 画面上の部品配置で画面を作成できる
+    - 生成物をNyanQLフレームワーク群の体裁に沿うソースコードとして扱える
+  success_indicators: []
+  initial_scope:
+    included:
+      - ブラウザ上のVB6風画面作成とソースコード生成という構想
+    excluded: []
+  constraints:
+    - 生成物はソースコードとするという要求者の前提
+    - NyanQLフレームワーク群の体裁を保つという要求者の前提
+  dependencies:
+    - NyanQLフレームワーク群（採用製品とバージョンは未決定）
+  unknowns:
+    - 利用者、具体的な対象業務、成功指標
+    - 初期版の詳細範囲と対象外
+    - 生成形式、追加依存、手編集後の再編集範囲
+    - 開発言語、配置方式、対応環境
+    - 保存方式、共有利用、実行権限、公開方法
+    - 期限、予算、ライセンス、受入条件
+    - 初回開発中の正式要件保管とブランチ対応、正式版への切替記録、次版フォーク先
+  additional_research:
+    - 採用候補版のディレクトリ構成・設定・実行仕様の確認
+    - ソースコード生成と画面再編集の技術的な制約の確認
+  traceability:
+    action_scenario_ids: []
+    workset_ids: []
+    requirement_pull_request: null
+  human_decision:
+    decision: pending
+    decided_by: ""
+    decided_at: ""
+    reason: 構想の整理とGitHub記録は依頼済み。要件定義着手の正式判断は未記録
+  history:
+    - changed_at: "2026-10-22"
+      from: null
+      to: exploring
+      changed_by: ChatGPT
+      reason: 会話を基に開発要求を登録。要求者がNyanRADを当面Sandboxとして使用することを承認
