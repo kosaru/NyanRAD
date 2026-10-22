@@ -2,7 +2,7 @@
 development_request:
   request_id: DR-NYANRAD-001
   title: NyanQL群のソースコードを生成するブラウザ型ビジュアル開発環境
-  status: candidate
+  status: approved-for-requirements
   requester_intent:
     statement: NyanQLフレームワーク群をVB6のような統合開発環境で使えるようにする。ブラウザでポトペタ編集でき、生成物は同群の体裁を保ったソースコードとする
   background:
@@ -52,10 +52,10 @@ development_request:
     workset_ids: []
     requirement_pull_request: null
   human_decision:
-    decision: pending
-    decided_by: ""
-    decided_at: ""
-    reason: 構想の整理とGitHub記録は依頼済み。要件定義着手の正式判断は未記録
+    decision: approved-for-requirements
+    decided_by: "要求者（本チャットのユーザー）"
+    decided_at: "2026-10-22"
+    reason: 要求者が「はいお願いします。要件定義着手してください。」と明示
   history:
     - changed_at: "2026-10-22"
       from: null
@@ -67,3 +67,8 @@ development_request:
       to: candidate
       changed_by: ChatGPT
       reason: 人間が対象利用者・困り事・期待する変化を確認。初期範囲の比較と未決定事項が揃い、受付条件を満たした
+    - changed_at: "2026-10-22"
+      from: candidate
+      to: approved-for-requirements
+      changed_by: 要求者（判断）・AI（記録）
+      reason: 要求者の明示指示に基づき、人間向け要件定義へ着手
