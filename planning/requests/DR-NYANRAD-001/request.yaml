@@ -2,7 +2,7 @@
 development_request:
   request_id: DR-NYANRAD-001
   title: NyanQL群のソースコードを生成するブラウザ型ビジュアル開発環境
-  status: exploring
+  status: candidate
   requester_intent:
     statement: NyanQLフレームワーク群をVB6のような統合開発環境で使えるようにする。ブラウザでポトペタ編集でき、生成物は同群の体裁を保ったソースコードとする
   background:
@@ -11,19 +11,24 @@ development_request:
       - ブラウザ上で動くVB6に近い開発環境を検討している
     problem:
       - 要求者はAccess型の仕組みには敷居の高さを感じている
-      - 現在の作業で生じている具体的な問題は未確認
-  target_users: []
+      - ファイルを個別に編集する手間があり、画面作成から実行まで一つの環境で進めたい
+  target_users:
+    - NyanQL群でアプリを作る開発者
   expected_change:
     - 画面上の部品配置で画面を作成できる
     - 生成物をNyanQLフレームワーク群の体裁に沿うソースコードとして扱える
-  success_indicators: []
+  success_indicators:
+    - 画面作成から処理編集・実行・保存・再編集まで一つの環境で進められる
+    - ファイルを個別に編集する手間が減る（定量目標は未設定）
   initial_scope:
     included:
       - ブラウザ上のVB6風画面作成とソースコード生成という構想
       - NyanPUI・Nyan8・NyanQLを扱う開発環境
       - NyanPUIからNyanQLへの直接接続とNyan8経由の接続
       - まずNyanQL内蔵DBを利用する方向（SQLite・DuckDBを検討）
-    excluded: []
+      - initial-scope-options.mdの初回候補を検討の軸とする
+    excluded:
+      - initial-scope-options.mdの後続候補を初回対象外の検討の軸とする（詳細は要件定義で具体化）
   constraints:
     - 生成物はソースコードとするという要求者の前提
     - NyanQLフレームワーク群の体裁を保つという要求者の前提
@@ -31,7 +36,7 @@ development_request:
     - NyanPUI・Nyan8・NyanQL（採用バージョンは未決定）
     - NyanQL群の実行ファイルは要求者側で用意する
   unknowns:
-    - 共有利用等の利用条件と成功指標（特定業務アプリへの限定は前提としない）
+    - 共有利用等の利用条件と定量的な成功指標（特定業務アプリへの限定は前提としない）
     - 初期版の詳細範囲と対象外
     - 既定DB、SQLite・DuckDBの初回対応範囲、実行ファイルの版と配置
     - 生成形式、追加依存、手編集後の再編集範囲
@@ -57,3 +62,8 @@ development_request:
       to: exploring
       changed_by: ChatGPT
       reason: 会話を基に開発要求を登録。要求者がNyanRADを当面Sandboxとして使用することを承認
+    - changed_at: "2026-10-22"
+      from: exploring
+      to: candidate
+      changed_by: ChatGPT
+      reason: 人間が対象利用者・困り事・期待する変化を確認。初期範囲の比較と未決定事項が揃い、受付条件を満たした
