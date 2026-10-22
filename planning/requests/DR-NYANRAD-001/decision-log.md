@@ -118,3 +118,13 @@ UI・機能・データ・接続図と判断一覧へ同じ内容を同期。正
 一覧表のセル内編集・ソート・検索・ページ分割やDB自動更新まで採用した意味ではない。
 
 判断対象：[デザイナーの対応案](https://github.com/kosaru/NyanRAD/blob/697983cc15c0a4a9cf60823b4e15d3757ef490bc/planning/requirements/12-designer-editing-options.md)。UI・機能・データ・判断一覧に同期。正式Baseline・実装開始は未成立。
+
+## 編集操作の細目への了承
+
+要求者：「いいと思う。先進めよう。」
+対象は[編集操作の細目案](https://github.com/kosaru/NyanRAD/blob/b98dd143752d2ef9f916423c6479877a1371aca4/planning/requirements/13-editing-details.md)。
+
+コピー時に手書き本文を自動複製しない、名称変更で任意本文を文字列置換しない、配置等のUndoとコード履歴を分ける、保存後も同じ編集セッションでは履歴を保持しUndo後を未保存とする、削除Undoで本文を二重生成しない、明示的なイベント引数、Loadの時機等の検討方針を了承されたものとして記録する。
+本文に明示された未決定の署名・値型・行キー・配置値の細則・履歴上限等は、この了承で自動確定させない。
+
+正式Baseline・実装開始は未成立。
