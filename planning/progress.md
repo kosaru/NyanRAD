@@ -1,10 +1,11 @@
 # NyanRAD 進捗一覧
 
-最終更新：2026-10-22
+最終更新：2026-10-23
 
 ## 現在地
 
-要件定義着手済み（DR-NYANRAD-001：approved-for-requirements）。「要件定義、その前に」を記録し、「企画を確認する」「全体像を描く」「大まかに区分けする」の初稿を作成。NyanQL群をVB6のように使う目的、ソースコードを生成物とする前提、直接接続とNyan8経由、内蔵DBを使う方向を記録済み。
+要件初稿一式と主要方針の合意記録を整備済み。2026-10-23に全29文書を固定Commitで点検し、合意済みなのに残っていた未決定記述を10文書で修正。[承認準備の点検結果](requirements/19-readiness-review.md)に残る不足を整理。
+正式Baseline Candidateは未完成。IFDAM・対応表・固定Snapshot等の準備とBlocking不足の解消が必要。
 
 ## 追跡する作業
 
@@ -13,7 +14,7 @@
 | 初期構想・判断の保存 | 完了 | [議論の整理](requests/DR-NYANRAD-001/discussion-summary.md)、[判断履歴](requests/DR-NYANRAD-001/decision-log.md) |
 | VB6とNyanQL群の対応調査 | 比較資料作成済み | [対応資料](requests/DR-NYANRAD-001/vb6-nyan-mapping.md) |
 | 初期範囲・対象外の比較と着手判断材料 | 着手判断記録済み | [Issue #2](https://github.com/kosaru/NyanRAD/issues/2) |
-| 人間向け要件定義 | 準備編進行中・助走編の行動シナリオ・概念データモデル初稿作成・技術選択の未決定事項を継続管理 | [準備編 Issue #3](https://github.com/kosaru/NyanRAD/issues/3) |
+| 人間向け要件定義 | 初稿・主要合意の記録済み／承認準備の不足を解消中 | [点検結果](requirements/19-readiness-review.md)、[Issue #5](https://github.com/kosaru/NyanRAD/issues/5) |
 | 正式Baseline・実装引渡し | 未着手 | 要件定義と正式判断の後 |
 | 設計・実装・テスト・内部レビュー | 未着手 | 正式なWork Requestの後 |
 | 初回正式リリース | 未着手 | 人間の正式受入の後 |
@@ -24,8 +25,7 @@
 
 ## 次に進める内容
 
-[初期範囲の比較案](requests/DR-NYANRAD-001/initial-scope-options.md)を作成済み。初回候補と後続候補を検討の軸とする人間の了承を記録済み。
-対象利用者・困り事・改善方向の人間確認を反映済み。要件定義着手の明示判断を記録済み。[企画確認書](requirements/01-project-brief.md)を材料に、[全体像](requirements/02-overview.md)と[大まかな区分](requirements/03-areas.md)を作成済み。[技術比較案](requirements/04-technology-options.md)を作成済み。利用場所はローカルを基本とする。[既存機能の成立条件](requirements/04a-local-feasibility.md)を調査済み。保存機能は既存基盤にあり、追加バイナリは未採用。初回対象OSはmacOS。[検証条件案](requirements/04b-macos-validation.md)を作成。[要求一覧](requirements/05-requirements-list.md)に16項目と技術課題の依存を整理済み。[行動シナリオ](requirements/06-action-scenarios.md)を作成済み。[概念データモデル](requirements/07-conceptual-data-model.md)を作成済み。[UI初稿](requirements/08-ui-design.md)と[機能検討](requirements/09-functions.md)を作成済み。[データ初稿](requirements/10-data.md)に必要な情報・関係・CRUDを整理済み。次は「要件定義を仕上げる」でUI・機能・データの整合を確認し、IFDAMと未決定事項をまとめる。技術選択の未決定事項は完了扱いにせず継続管理する。
+確認済み要件の統合資料を作り、利用者が決める残件と技術設計事項を分離する。その後、Workset・IFDAM・構造化成果物・対応表・固定Snapshotを準備し、正式候補として提出できる条件を確認する。
 
 ## 更新方法
 
@@ -86,3 +86,5 @@
 - 2026-10-22：現行NyanQLの接続処理を再確認し、[DB初回範囲案](requirements/17-database-scope.md)と[受入条件案](requirements/18-acceptance-criteria.md)を作成。SQLite既定・両DB基本CRUD検証を提案。人間判断と正式承認は未成立。
 
 - 2026-10-22：DB初回範囲のB案を人間が了承。SQLite既定、SQLite・DuckDB両方の基本CRUD、直接・Nyan8経由の両経路を確認対象として同期。技術実証と受入条件全体の正式判断は未成立。
+
+- 2026-10-23：全29文書の点検と相対リンク確認を実施。合意済みのDB・配置・編集方針に関する古い記述を10文書で修正。正式候補の不足と次の作業を点検結果に整理。
