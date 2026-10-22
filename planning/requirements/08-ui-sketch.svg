@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740">
+<style>text{font-family:system-ui,sans-serif;font-size:16px;fill:#243246}.title{font-size:21px;font-weight:700}.small{font-size:14px;fill:#53657a}.panel{fill:#fff;stroke:#b8c5d3}.bar{fill:#e8eef5;stroke:#b8c5d3}</style>
+<rect width="1200" height="740" fill="#f4f7fb"/>
+<text x="24" y="34" class="title">NyanRAD — フォームを作る（画面ラフ）</text>
+<rect x="20" y="50" width="1160" height="48" class="bar"/>
+<text x="38" y="80">新規　開く　保存　元に戻す　やり直す　｜　実行　停止</text>
+<text x="840" y="80" class="small">HelloProject　未保存あり　停止中</text>
+<rect x="20" y="112" width="230" height="240" class="panel"/>
+<text x="36" y="140" class="title">プロジェクト</text>
+<text x="38" y="177">▾ フォーム</text><text x="58" y="208">Form1</text><text x="38" y="245">▸ Nyan8 の処理</text><text x="38" y="278">▸ NyanQL のSQL</text><text x="38" y="311">▸ ソース・設定</text>
+<rect x="20" y="366" width="230" height="210" class="panel"/>
+<text x="36" y="396" class="title">ツールボックス</text>
+<text x="38" y="432">ラベル　入力欄　ボタン</text><text x="38" y="466">複数行入力　チェック</text><text x="38" y="500">選択欄　一覧表</text>
+<rect x="264" y="112" width="650" height="464" class="panel"/>
+<rect x="264" y="112" width="650" height="42" class="bar"/><text x="282" y="139">Form1　［デザイン］［コード］</text>
+<rect x="292" y="180" width="590" height="352" fill="#f8fafc" stroke="#c8d2de"/>
+<text x="320" y="222">名前</text><rect x="320" y="242" width="300" height="40" fill="white" stroke="#8495a9"/>
+<rect x="650" y="242" width="150" height="40" fill="#e7f0ff" stroke="#3478ce" stroke-width="2"/><text x="705" y="268">表示</text>
+<text x="320" y="335" class="small">結果を表示する場所</text><text x="302" y="558" class="small">選択：cmdHello　　ダブルクリックでイベント処理へ</text>
+<rect x="928" y="112" width="252" height="464" class="panel"/>
+<text x="944" y="142" class="title">プロパティ</text><text x="944" y="181">対象：cmdHello</text>
+<text x="944" y="225">名前　　　 cmdHello</text><text x="944" y="262">表示文字　 表示</text><text x="944" y="299">位置　　　 358, 62</text><text x="944" y="336">サイズ　　 150 × 40</text><text x="944" y="373">表示　　　 有効</text><text x="944" y="410">操作　　　 有効</text>
+<rect x="20" y="590" width="1160" height="130" class="panel"/>
+<rect x="20" y="590" width="1160" height="38" class="bar"/><text x="38" y="615">エラー　｜　実行ログ　｜　実行状態</text>
+<text x="38" y="658">実行対象：HelloProject　　保存：未保存の変更あり　　実行：停止中</text>
+<text x="38" y="694" class="small">検討用の静的ラフ。部品の寸法・配置方式や画面仕様は未確定。</text>
+</svg>
