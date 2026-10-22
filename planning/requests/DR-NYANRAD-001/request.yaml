@@ -30,6 +30,7 @@ development_request:
     excluded:
       - initial-scope-options.mdの後続候補を初回対象外の検討の軸とする（詳細は要件定義で具体化）
   constraints:
+    - NyanRADはHTML・CSS・JavaScriptで構築し、要求者提供のNyanQL群実行ファイルを利用する
     - 初回はmacOSでのローカル利用を対象として進める
     - 生成物はソースコードとするという要求者の前提
     - NyanQLフレームワーク群の体裁を保つという要求者の前提
