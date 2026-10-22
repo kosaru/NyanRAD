@@ -25,7 +25,7 @@
 ## 次に進める内容
 
 [初期範囲の比較案](requests/DR-NYANRAD-001/initial-scope-options.md)を作成済み。初回候補と後続候補を検討の軸とする人間の了承を記録済み。
-対象利用者・困り事・改善方向の人間確認を反映済み。要件定義着手の明示判断を記録済み。[企画確認書](requirements/01-project-brief.md)を材料に、[全体像](requirements/02-overview.md)と[大まかな区分](requirements/03-areas.md)を作成済み。[技術比較案](requirements/04-technology-options.md)を作成済み。利用場所はローカルを基本とする。[既存機能の成立条件](requirements/04a-local-feasibility.md)を調査済み。保存機能は既存基盤にあり、追加バイナリは未採用。初回対象OSはmacOS。[検証条件案](requirements/04b-macos-validation.md)を作成。[要求一覧](requirements/05-requirements-list.md)に16項目と技術課題の依存を整理済み。[行動シナリオ](requirements/06-action-scenarios.md)を作成済み。[概念データモデル](requirements/07-conceptual-data-model.md)を作成済み。[UI初稿](requirements/08-ui-design.md)と[機能検討](requirements/09-functions.md)を作成済み。次は「データについて考える」で必要な情報・関係・CRUDを具体化する。技術選択の未決定事項は完了扱いにせず継続管理する。
+対象利用者・困り事・改善方向の人間確認を反映済み。要件定義着手の明示判断を記録済み。[企画確認書](requirements/01-project-brief.md)を材料に、[全体像](requirements/02-overview.md)と[大まかな区分](requirements/03-areas.md)を作成済み。[技術比較案](requirements/04-technology-options.md)を作成済み。利用場所はローカルを基本とする。[既存機能の成立条件](requirements/04a-local-feasibility.md)を調査済み。保存機能は既存基盤にあり、追加バイナリは未採用。初回対象OSはmacOS。[検証条件案](requirements/04b-macos-validation.md)を作成。[要求一覧](requirements/05-requirements-list.md)に16項目と技術課題の依存を整理済み。[行動シナリオ](requirements/06-action-scenarios.md)を作成済み。[概念データモデル](requirements/07-conceptual-data-model.md)を作成済み。[UI初稿](requirements/08-ui-design.md)と[機能検討](requirements/09-functions.md)を作成済み。[データ初稿](requirements/10-data.md)に必要な情報・関係・CRUDを整理済み。次は「要件定義を仕上げる」でUI・機能・データの整合を確認し、IFDAMと未決定事項をまとめる。技術選択の未決定事項は完了扱いにせず継続管理する。
 
 ## 更新方法
 
@@ -64,3 +64,5 @@
 - 2026-10-22：UI初稿と画面ラフを作成。行動シナリオ・概念モデルから画面動線と４つのWorkset候補を整理。以降は[Issue #5](https://github.com/kosaru/NyanRAD/issues/5)でUI・機能・データを追跡。次は機能の入力・出力・状態・例外を検討する。
 
 - 2026-10-22：UIの４つのWorkset候補ごとに機能の入力・出力・状態・例外の初稿を作成。未保存実行・競合・削除・停止失敗の扱いは判断対象として明示。次はデータの検討。
+
+- 2026-10-22：データ項目・関係図・CRUD対応の初稿を作成。通常ソース、編集中の情報、保存結果、実行状態を区別し、作成元と削除・保持の未決定事項を確認。物理DB・専用保存形式は未確定。
