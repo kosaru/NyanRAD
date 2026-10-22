@@ -13,17 +13,19 @@
 | 初期構想・判断の保存 | 完了 | [議論の整理](requests/DR-NYANRAD-001/discussion-summary.md)、[判断履歴](requests/DR-NYANRAD-001/decision-log.md) |
 | VB6とNyanQL群の対応調査 | 比較資料作成済み | [対応資料](requests/DR-NYANRAD-001/vb6-nyan-mapping.md) |
 | 初期範囲・対象外の比較と着手判断材料 | 着手判断記録済み | [Issue #2](https://github.com/kosaru/NyanRAD/issues/2) |
-| 人間向け要件定義 | 準備編進行中・準備編の要求一覧初稿作成・技術選択の未決定事項を継続管理 | [準備編 Issue #3](https://github.com/kosaru/NyanRAD/issues/3) |
+| 人間向け要件定義 | 準備編進行中・助走編の行動シナリオ初稿作成・技術選択の未決定事項を継続管理 | [準備編 Issue #3](https://github.com/kosaru/NyanRAD/issues/3) |
 | 正式Baseline・実装引渡し | 未着手 | 要件定義と正式判断の後 |
 | 設計・実装・テスト・内部レビュー | 未着手 | 正式なWork Requestの後 |
 | 初回正式リリース | 未着手 | 人間の正式受入の後 |
+
+助走編の追跡：[Issue #4](https://github.com/kosaru/NyanRAD/issues/4)
 
 全体の追跡：[Issue #1](https://github.com/kosaru/NyanRAD/issues/1)
 
 ## 次に進める内容
 
 [初期範囲の比較案](requests/DR-NYANRAD-001/initial-scope-options.md)を作成済み。初回候補と後続候補を検討の軸とする人間の了承を記録済み。
-対象利用者・困り事・改善方向の人間確認を反映済み。要件定義着手の明示判断を記録済み。[企画確認書](requirements/01-project-brief.md)を材料に、[全体像](requirements/02-overview.md)と[大まかな区分](requirements/03-areas.md)を作成済み。[技術比較案](requirements/04-technology-options.md)を作成済み。利用場所はローカルを基本とする。[既存機能の成立条件](requirements/04a-local-feasibility.md)を調査済み。保存機能は既存基盤にあり、追加バイナリは未採用。初回対象OSはmacOS。[検証条件案](requirements/04b-macos-validation.md)を作成。[要求一覧](requirements/05-requirements-list.md)に16項目と技術課題の依存を整理済み。次は「利用者の行動シナリオを書く」へ進む。技術選択の未決定事項は完了扱いにせず継続管理する。
+対象利用者・困り事・改善方向の人間確認を反映済み。要件定義着手の明示判断を記録済み。[企画確認書](requirements/01-project-brief.md)を材料に、[全体像](requirements/02-overview.md)と[大まかな区分](requirements/03-areas.md)を作成済み。[技術比較案](requirements/04-technology-options.md)を作成済み。利用場所はローカルを基本とする。[既存機能の成立条件](requirements/04a-local-feasibility.md)を調査済み。保存機能は既存基盤にあり、追加バイナリは未採用。初回対象OSはmacOS。[検証条件案](requirements/04b-macos-validation.md)を作成。[要求一覧](requirements/05-requirements-list.md)に16項目と技術課題の依存を整理済み。[行動シナリオ](requirements/06-action-scenarios.md)を作成済み。次は「概念データモデルを作る」へ進む。技術選択の未決定事項は完了扱いにせず継続管理する。
 
 ## 更新方法
 
@@ -54,3 +56,5 @@
 - 2026-10-22：初回対象OSをmacOSとする人間判断を記録。保存・起動・停止・ログ等の検証条件案を作成。動作実証は未実施。
 
 - 2026-10-22：確認済みの目的・前提と初回候補を区別した要求一覧の初稿を作成。重複・矛盾・代替案、後続候補、未決定事項との対応を整理。
+
+- 2026-10-22：要求一覧を材料に行動シナリオ初稿を作成。作成・実行、再開・修正、失敗時の継続、生成物利用と要求16項目の対応を確認。
