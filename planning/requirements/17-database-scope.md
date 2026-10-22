@@ -1,5 +1,15 @@
 # NyanRAD 初回DB対応の比較案
 
+## 初回DB範囲の人間判断
+
+要求者は「SQLiteを既定にし、SQLite・DuckDBの両方で基本CRUDを確認し、直接接続とNyan8経由を対象にする」案に対し、「はい。それで進めましょう。」と回答した。
+初回はB案を採用し、SQLiteを既定とする。SQLite・DuckDBそれぞれで登録・参照・更新・削除を、直接接続とNyan8経由の両経路で確認する。
+同じSQL本文の互換保証、DB間変換、DB自動初期化・移行、IDE管理情報のDB必須保存は追加しない。
+この判断は初回DB対応範囲であり、受入条件案全体・動作検証成功・正式Releaseの承認ではない。
+
+この確認節は同じDB範囲を未決定とする以前の記述に優先する。
+
+
 ## 前提
 
 まずNyanQL内蔵DBを利用する。現行ソースのconnectDBにはSQLiteとDuckDBがあり、設定はDBTypeがsqlite／duckdb、DBNameが接続先を表す。
