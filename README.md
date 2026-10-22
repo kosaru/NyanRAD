@@ -3,8 +3,9 @@
 NyanQLフレームワーク群を、VB6のような統合開発環境で使えるようにする構想です。
 VB6のように部品を配置して画面を作り、生成物をソースコードとして扱うことを目指します。
 
-現在は初期構想の整理段階です。実装済み製品、承認済み要件、正式BaselineまたはCodexへの作業指示ではありません。
+現在は人間の明示承認を受け、要件定義に着手しています。企画確認書は初稿です。正式Baseline・実装開始は未成立です。
 
+- [企画確認書（初稿）](planning/requirements/01-project-brief.md)
 - [進捗一覧・次の作業](planning/progress.md)
 - [全体追跡Issue](https://github.com/kosaru/NyanRAD/issues/1)
 - [構想・前提・未決定事項](planning/requests/DR-NYANRAD-001/discussion-summary.md)
