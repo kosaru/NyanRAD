@@ -16,5 +16,9 @@
 | INT-NYANRAD-002-ROWINDEX | alternative | 行キーが未指定 | その時点の行番号であると示し行データを渡す |
 | INT-NYANRAD-002-ROWDUP | exception | 指定行キーが欠落または重複 | 問題を示し曖昧な結果を渡さない |
 | INT-NYANRAD-002-ROWRELOAD | normal | 一覧表を再読込 | 更新前の行選択を解除する |
+| INT-NYANRAD-002-CLIP | alternative | 配置またはフォーム寸法の変更で部品が外へ出る | 警告し部品を自動移動・縮小・削除しない |
+| INT-NYANRAD-002-UNDODELETE | normal | 部品削除がUndoの対象である | 部品と管理結線を戻し残る手書き本文を二重生成しない |
+| INT-NYANRAD-002-UNDOAFTERSAVE | alternative | 同じ編集セッションで保存後に対象操作をUndo | 編集内容を戻して未保存と示し保存済みファイルを巻き戻さない |
+| INT-NYANRAD-002-ALIGN | normal | 整列対象を選択し基準を指定 | 配置を反映しUndo対象とする |
 
-検討中の部分集合。追加した選択と例外を含め、正式候補の全範囲・人間の承認・Baselineは未成立。図と構造化資料の最終的な意味一致の確認も継続する。
+検討中の部分集合。未実証の技術成立や提供条件を含み、正式候補・Baseline・実装開始は未成立。DB動作やIDE外実行の検証組合せは[網羅性確認表](../coverage-review.md)で追跡。
