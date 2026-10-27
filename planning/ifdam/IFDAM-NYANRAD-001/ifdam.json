@@ -121,6 +121,18 @@
       "name": "未保存で切替：保存失敗",
       "source_interface_id": "UI-NYANRAD-001",
       "business_trigger": "未保存で切替：保存失敗"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-EMPTYDIR",
+      "name": "空の既存フォルダに新規作成",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "空の既存フォルダに新規作成"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-CREATEFAIL",
+      "name": "新規作成",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "新規作成"
     }
   ],
   "functions": [
@@ -291,6 +303,31 @@
       ],
       "exception_results": [
         "成功扱いせず対象別結果と未保存内容を示す"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-EMPTYDIR",
+      "name": "空の作成先を再確認する",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "作成先が存在するが空であり生成直前に再確認できた"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-CREATEFAIL",
+      "name": "新規作成の失敗を表示する",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "作成途中で失敗した"
+      ],
+      "exception_results": [
+        "作成済み対象と失敗を示しフォルダ全体を自動削除しない"
       ]
     }
   ],
@@ -853,6 +890,85 @@
       ],
       "expected_results": [
         "成功扱いせず対象別結果と未保存内容を示す"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-EMPTYDIR",
+      "name": "空の作成先を再確認する",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-EMPTYDIR",
+      "function_id": "FN-NYANRAD-001-EMPTYDIR",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "R",
+            "C"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "C"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "作成先が存在するが空であり生成直前に再確認できた"
+      ],
+      "expected_results": [
+        "作成したプロジェクトを表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-CREATEFAIL",
+      "name": "新規作成の失敗を表示する",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-CREATEFAIL",
+      "function_id": "FN-NYANRAD-001-CREATEFAIL",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-3",
+          "operations": [
+            "C"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "作成途中で失敗した"
+      ],
+      "expected_results": [
+        "作成済み対象と失敗を示しフォルダ全体を自動削除しない"
       ],
       "unknown_ids": [
         "UNRESOLVED-001"
