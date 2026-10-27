@@ -121,6 +121,30 @@
       "name": "ログ表示をクリア",
       "source_interface_id": "UI-NYANRAD-004",
       "business_trigger": "ログ表示をクリア"
+    },
+    {
+      "event_id": "EVT-NYANRAD-004-RUNSAVEFAIL",
+      "name": "保存して実行：保存失敗",
+      "source_interface_id": "UI-NYANRAD-004",
+      "business_trigger": "保存して実行：保存失敗"
+    },
+    {
+      "event_id": "EVT-NYANRAD-004-RUNMISSING",
+      "name": "実行ファイルがない",
+      "source_interface_id": "UI-NYANRAD-004",
+      "business_trigger": "実行ファイルがない"
+    },
+    {
+      "event_id": "EVT-NYANRAD-004-PORTCONFLICT",
+      "name": "実行：ポート競合",
+      "source_interface_id": "UI-NYANRAD-004",
+      "business_trigger": "実行：ポート競合"
+    },
+    {
+      "event_id": "EVT-NYANRAD-004-LOGFAIL",
+      "name": "ログを取得",
+      "source_interface_id": "UI-NYANRAD-004",
+      "business_trigger": "ログを取得"
     }
   ],
   "functions": [
@@ -288,6 +312,62 @@
       ],
       "business_rules": [
         "表示クリアを選択"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-004-RUNSAVEFAIL",
+      "name": "保存失敗時の実行を止める",
+      "business_purpose": "アプリを実行して動作を確認する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "未保存時に保存して実行を選択し保存が失敗"
+      ],
+      "exception_results": [
+        "新規起動せず対象別の失敗と未保存内容を示す"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-004-RUNMISSING",
+      "name": "起動できない対象を示す",
+      "business_purpose": "アプリを実行して動作を確認する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "指定された実行ファイルが見つからない"
+      ],
+      "exception_results": [
+        "起動失敗を対象とともに表示する"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-004-PORTCONFLICT",
+      "name": "ポート競合を示す",
+      "business_purpose": "アプリを実行して動作を確認する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "対象のポートを使用できない"
+      ],
+      "exception_results": [
+        "対象と競合を表示し既存サービスを自動停止しない"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-004-LOGFAIL",
+      "name": "ログ取得の失敗を示す",
+      "business_purpose": "アプリを実行して動作を確認する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "対象のログを取得できない"
+      ],
+      "exception_results": [
+        "ログが空と誤認させず取得失敗を表示する"
       ]
     }
   ],
@@ -796,6 +876,163 @@
       ],
       "expected_results": [
         "画面表示を消しログファイルを削除しない"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-004"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-RUNSAVEFAIL",
+      "name": "保存失敗時の実行を止める",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-004",
+      "event_id": "EVT-NYANRAD-004-RUNSAVEFAIL",
+      "function_id": "FN-NYANRAD-004-RUNSAVEFAIL",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-004-1",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-004-2",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-004",
+      "preconditions": [
+        "未保存時に保存して実行を選択し保存が失敗"
+      ],
+      "expected_results": [
+        "新規起動せず対象別の失敗と未保存内容を示す"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-004"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-RUNMISSING",
+      "name": "起動できない対象を示す",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-004",
+      "event_id": "EVT-NYANRAD-004-RUNMISSING",
+      "function_id": "FN-NYANRAD-004-RUNMISSING",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-004-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-004-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-004-3",
+          "operations": [
+            "C"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-004",
+      "preconditions": [
+        "指定された実行ファイルが見つからない"
+      ],
+      "expected_results": [
+        "起動失敗を対象とともに表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-004"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-PORTCONFLICT",
+      "name": "ポート競合を示す",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-004",
+      "event_id": "EVT-NYANRAD-004-PORTCONFLICT",
+      "function_id": "FN-NYANRAD-004-PORTCONFLICT",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-004-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-004-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-004-3",
+          "operations": [
+            "C"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-004",
+      "preconditions": [
+        "対象のポートを使用できない"
+      ],
+      "expected_results": [
+        "対象と競合を表示し既存サービスを自動停止しない"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-004"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-LOGFAIL",
+      "name": "ログ取得の失敗を示す",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-004",
+      "event_id": "EVT-NYANRAD-004-LOGFAIL",
+      "function_id": "FN-NYANRAD-004-LOGFAIL",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-004-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-004-3",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-004",
+      "preconditions": [
+        "対象のログを取得できない"
+      ],
+      "expected_results": [
+        "ログが空と誤認させず取得失敗を表示する"
       ],
       "unknown_ids": [
         "UNRESOLVED-004"
