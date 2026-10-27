@@ -1,0 +1,417 @@
+{
+  "schema_version": "2.0",
+  "ifdam_id": "IFDAM-NYANRAD-001",
+  "name": "プロジェクトを作成・再開する",
+  "workset_id": "WS-NYANRAD-001",
+  "artifact_status": "draft",
+  "source_artifacts": [
+    {
+      "artifact_id": "HA-NYANRAD-FORMALIZATION",
+      "artifact_type": "other",
+      "repository_path": "planning/requirements/23-formalization-map.md",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_location": "利用者の仕事ごとの対応"
+    },
+    {
+      "artifact_id": "HA-NYANRAD-OPERATIONS",
+      "artifact_type": "function",
+      "repository_path": "planning/requirements/22-operation-decisions.md",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021"
+    }
+  ],
+  "human_representation": {
+    "mermaid_source_path": "planning/ifdam/IFDAM-NYANRAD-001/flow.mmd",
+    "rendered_diagram_paths": [
+      "planning/ifdam/IFDAM-NYANRAD-001/flow.svg"
+    ],
+    "review_document_paths": [
+      "planning/ifdam/IFDAM-NYANRAD-001/review.md"
+    ],
+    "mapping_manifest_path": "planning/ifdam/mapping.json"
+  },
+  "interfaces": [
+    {
+      "interface_id": "UI-NYANRAD-001",
+      "name": "プロジェクト操作",
+      "interface_type": "screen",
+      "business_purpose": "プロジェクトを作成・再開する"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVT-NYANRAD-001-CREATE",
+      "name": "新規作成",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "新規作成"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-OPEN",
+      "name": "開く",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "開く"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-SAVE",
+      "name": "保存",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "保存"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-CONFLICT",
+      "name": "保存",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "保存"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-SAVEFAIL",
+      "name": "保存",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "保存"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-EXISTS",
+      "name": "新規作成",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "新規作成"
+    }
+  ],
+  "functions": [
+    {
+      "function_id": "FN-NYANRAD-001-CREATE",
+      "name": "プロジェクトを作成する",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "作成したプロジェクトを表示する"
+      ],
+      "business_rules": [
+        "作成先に既存ファイルがない"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-OPEN",
+      "name": "プロジェクトを読み込む",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "内容と再編集可能範囲を表示する"
+      ],
+      "business_rules": [
+        "対象ソースを読み込める"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-SAVE",
+      "name": "編集内容を保存する",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "対象別の保存結果を表示する"
+      ],
+      "business_rules": [
+        "競合がなく保存できる"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-CONFLICT",
+      "name": "保存競合を確認する",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "外部で対象が変更された"
+      ],
+      "exception_results": [
+        "差分と再読込・明示上書き・中止の選択を示す"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-SAVEFAIL",
+      "name": "保存失敗を表示する",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "全部または一部の保存が失敗"
+      ],
+      "exception_results": [
+        "未保存内容と失敗対象を保持して表示し新規実行を止める"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-EXISTS",
+      "name": "作成先の既存内容を保護する",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "作成先に既存ファイルがある"
+      ],
+      "exception_results": [
+        "生成せず別の場所・中止を示す"
+      ]
+    }
+  ],
+  "data_stores": [
+    {
+      "data_store_id": "DS-NYANRAD-001-1",
+      "name": "プロジェクト・通常ソース・設定",
+      "business_meaning": "プロジェクト・通常ソース・設定"
+    },
+    {
+      "data_store_id": "DS-NYANRAD-001-2",
+      "name": "編集中の内容",
+      "business_meaning": "編集中の内容"
+    },
+    {
+      "data_store_id": "DS-NYANRAD-001-3",
+      "name": "保存結果・競合情報",
+      "business_meaning": "保存結果・競合情報"
+    }
+  ],
+  "interactions": [
+    {
+      "interaction_id": "INT-NYANRAD-001-CREATE",
+      "name": "プロジェクトを作成する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-CREATE",
+      "function_id": "FN-NYANRAD-001-CREATE",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "C"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "C"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "作成先に既存ファイルがない"
+      ],
+      "expected_results": [
+        "作成したプロジェクトを表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-OPEN",
+      "name": "プロジェクトを読み込む",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-OPEN",
+      "function_id": "FN-NYANRAD-001-OPEN",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "C"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "対象ソースを読み込める"
+      ],
+      "expected_results": [
+        "内容と再編集可能範囲を表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-SAVE",
+      "name": "編集内容を保存する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-SAVE",
+      "function_id": "FN-NYANRAD-001-SAVE",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-3",
+          "operations": [
+            "C"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "競合がなく保存できる"
+      ],
+      "expected_results": [
+        "対象別の保存結果を表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-CONFLICT",
+      "name": "保存競合を確認する",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-CONFLICT",
+      "function_id": "FN-NYANRAD-001-CONFLICT",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-3",
+          "operations": [
+            "C"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "外部で対象が変更された"
+      ],
+      "expected_results": [
+        "差分と再読込・明示上書き・中止の選択を示す"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-SAVEFAIL",
+      "name": "保存失敗を表示する",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-SAVEFAIL",
+      "function_id": "FN-NYANRAD-001-SAVEFAIL",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-3",
+          "operations": [
+            "C"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "全部または一部の保存が失敗"
+      ],
+      "expected_results": [
+        "未保存内容と失敗対象を保持して表示し新規実行を止める"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-EXISTS",
+      "name": "作成先の既存内容を保護する",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-EXISTS",
+      "function_id": "FN-NYANRAD-001-EXISTS",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "作成先に既存ファイルがある"
+      ],
+      "expected_results": [
+        "生成せず別の場所・中止を示す"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    }
+  ],
+  "unknowns": [
+    {
+      "unknown_id": "UNRESOLVED-001",
+      "description": "提供条件と正式候補範囲が未固定。004は既存能力による実行管理の成立も未実証。",
+      "blocking_scope": "workset",
+      "affected_ids": [
+        "WS-NYANRAD-001"
+      ],
+      "blocking": true,
+      "decision_owner": "AIが整理・要求者が提供条件判断",
+      "status": "open"
+    }
+  ]
+}
