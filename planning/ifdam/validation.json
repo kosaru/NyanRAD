@@ -3,21 +3,22 @@
   "schema_repository": "kosaru/AI-powered-development",
   "schema_path": "schemas/ifdam.schema.yaml",
   "schema_blob": "84b70d9377b467c28ab4aeecf620201446bb9876",
-  "source_commit": "28328b629ada3f6f347cae54fc0eab02cd8ff3b8",
+  "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
   "ifdams": 4,
-  "interactions": 43,
+  "interactions": 53,
   "checks": {
     "schema": "pass",
     "id_uniqueness_across_ifdams": "pass",
     "event_source_and_internal_references": "pass",
-    "mapping_json_pointers": "pass",
+    "mapping_json_pointers_and_mermaid_nodes": "pass",
     "svg_xml": "pass",
-    "quicklook_render": "pass（001〜004の画像生成。004と003のプレビュー一部を目視）"
+    "quicklook_render": "pass（４図画像生成し各図の先頭側を目視）"
   },
   "not_verified": [
-    "全SVG領域の目視確認",
-    "全要求のInteraction網羅性",
-    "Schema外の意味の完全一致",
+    "全SVG領域の目視",
+    "全要求・例外のInteraction網羅性",
+    "図と構造化資料の意味の完全一致",
+    "DB・接続の４組の実行",
     "人間の承認",
     "実行管理の動作"
   ],
