@@ -11,7 +11,12 @@
 | INT-NYANRAD-004-UNKNOWN | exception | 所有・終了を確認できない | 不明・失敗を停止済みと区別し自動強制終了しない |
 | INT-NYANRAD-004-LOG | normal | 対象からログを取得できる | 上限と省略を示し表示クリアでログファイルを消さない |
 | INT-NYANRAD-004-EXPORT | normal | 対象の保存済み内容を確認できる | 対応するNyanQL群でIDE外利用する通常ファイルを渡す |
+| INT-NYANRAD-004-UNSAVED | alternative | 未保存変更がある | 保存して実行・保存済み内容で実行・中止の選択を示す |
+| INT-NYANRAD-004-RUNSAVE | alternative | 保存して実行を選び保存が成功 | 保存した内容で対象を起動する |
+| INT-NYANRAD-004-RUNSAVED | alternative | 保存済み内容で実行を選択し部分保存でない | 未保存編集を保持して保存済み内容で起動する |
+| INT-NYANRAD-004-RUNCANCEL | alternative | 中止を選択 | 起動せず未保存内容を保持する |
+| INT-NYANRAD-004-RESTART | alternative | 同じ対象が実行済みで停止完了を確認 | 二重起動せず停止後に再実行する |
+| INT-NYANRAD-004-STOPFAIL | exception | 終了を確認できない | 成功扱いせず失敗または不明と表示する |
+| INT-NYANRAD-004-CLEAR | normal | 表示クリアを選択 | 画面表示を消しログファイルを削除しない |
 
-
-UI工程のWorkset候補を使用。正式な境界・Baselineは未成立。図は同じ構造化データから生成したSVGとMermaidソースを併記。Schema適合と要件の承認は別。
-各行の条件と結果、データ操作は検討用。競合の各選択や細かな編集操作等をすべて分解した完全なInteraction一覧ではない。次の範囲確認で補完する。
+検討中の部分集合。追加した選択と例外を含め、正式候補の全範囲・人間の承認・Baselineは未成立。図と構造化資料の最終的な意味一致の確認も継続する。
