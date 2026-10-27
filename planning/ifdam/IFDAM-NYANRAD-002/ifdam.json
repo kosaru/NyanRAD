@@ -102,25 +102,25 @@
     {
       "event_id": "EVT-NYANRAD-002-ROWKEY",
       "name": "一覧表の行を選ぶ",
-      "source_interface_id": "UI-NYANRAD-002",
+      "source_interface_id": "UI-NYANRAD-002-APP",
       "business_trigger": "一覧表の行を選ぶ"
     },
     {
       "event_id": "EVT-NYANRAD-002-ROWINDEX",
       "name": "一覧表の行を選ぶ",
-      "source_interface_id": "UI-NYANRAD-002",
+      "source_interface_id": "UI-NYANRAD-002-APP",
       "business_trigger": "一覧表の行を選ぶ"
     },
     {
       "event_id": "EVT-NYANRAD-002-ROWDUP",
       "name": "一覧表の行を選ぶ",
-      "source_interface_id": "UI-NYANRAD-002",
+      "source_interface_id": "UI-NYANRAD-002-APP",
       "business_trigger": "一覧表の行を選ぶ"
     },
     {
       "event_id": "EVT-NYANRAD-002-ROWRELOAD",
       "name": "一覧表を再読込",
-      "source_interface_id": "UI-NYANRAD-002",
+      "source_interface_id": "UI-NYANRAD-002-APP",
       "business_trigger": "一覧表を再読込"
     },
     {
@@ -839,7 +839,7 @@
       "interaction_id": "INT-NYANRAD-002-ROWKEY",
       "name": "行キーと行データを渡す",
       "flow_type": "normal",
-      "start_interface_id": "UI-NYANRAD-002",
+      "start_interface_id": "UI-NYANRAD-002-APP",
       "event_id": "EVT-NYANRAD-002-ROWKEY",
       "function_id": "FN-NYANRAD-002-ROWKEY",
       "data_store_operations": [
@@ -862,7 +862,7 @@
           ]
         }
       ],
-      "end_interface_id": "UI-NYANRAD-002",
+      "end_interface_id": "UI-NYANRAD-002-APP",
       "preconditions": [
         "行キーが指定済みで欠落・重複しない"
       ],
@@ -881,7 +881,7 @@
       "interaction_id": "INT-NYANRAD-002-ROWINDEX",
       "name": "行番号と行データを渡す",
       "flow_type": "alternative",
-      "start_interface_id": "UI-NYANRAD-002",
+      "start_interface_id": "UI-NYANRAD-002-APP",
       "event_id": "EVT-NYANRAD-002-ROWINDEX",
       "function_id": "FN-NYANRAD-002-ROWINDEX",
       "data_store_operations": [
@@ -904,7 +904,7 @@
           ]
         }
       ],
-      "end_interface_id": "UI-NYANRAD-002",
+      "end_interface_id": "UI-NYANRAD-002-APP",
       "preconditions": [
         "行キーが未指定"
       ],
@@ -923,7 +923,7 @@
       "interaction_id": "INT-NYANRAD-002-ROWDUP",
       "name": "曖昧な行キーを拒否する",
       "flow_type": "exception",
-      "start_interface_id": "UI-NYANRAD-002",
+      "start_interface_id": "UI-NYANRAD-002-APP",
       "event_id": "EVT-NYANRAD-002-ROWDUP",
       "function_id": "FN-NYANRAD-002-ROWDUP",
       "data_store_operations": [
@@ -934,7 +934,7 @@
           ]
         }
       ],
-      "end_interface_id": "UI-NYANRAD-002",
+      "end_interface_id": "UI-NYANRAD-002-APP",
       "preconditions": [
         "指定行キーが欠落または重複"
       ],
@@ -953,7 +953,7 @@
       "interaction_id": "INT-NYANRAD-002-ROWRELOAD",
       "name": "再読込時の行選択を解除する",
       "flow_type": "normal",
-      "start_interface_id": "UI-NYANRAD-002",
+      "start_interface_id": "UI-NYANRAD-002-APP",
       "event_id": "EVT-NYANRAD-002-ROWRELOAD",
       "function_id": "FN-NYANRAD-002-ROWRELOAD",
       "data_store_operations": [
@@ -965,7 +965,7 @@
           ]
         }
       ],
-      "end_interface_id": "UI-NYANRAD-002",
+      "end_interface_id": "UI-NYANRAD-002-APP",
       "preconditions": [
         "一覧表を再読込"
       ],
@@ -1345,7 +1345,7 @@
   "unknowns": [
     {
       "unknown_id": "UNRESOLVED-002",
-      "description": "提供条件と正式候補範囲が未固定。004は既存能力による実行管理の成立も未実証。 イベント引数の具体的な署名・値型は未決定。",
+      "description": "提供条件と正式候補範囲が未固定。004は既存能力による実行管理の成立も未実証。 イベント引数の具体的な署名・値型は未決定。 イベント処理の初回雛形の作成と保存の扱いは人間判断待ち。",
       "blocking_scope": "workset",
       "affected_ids": [
         "WS-NYANRAD-002"
