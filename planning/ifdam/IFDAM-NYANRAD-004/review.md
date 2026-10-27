@@ -18,5 +18,9 @@
 | INT-NYANRAD-004-RESTART | alternative | 同じ対象が実行済みで停止完了を確認 | 二重起動せず停止後に再実行する |
 | INT-NYANRAD-004-STOPFAIL | exception | 終了を確認できない | 成功扱いせず失敗または不明と表示する |
 | INT-NYANRAD-004-CLEAR | normal | 表示クリアを選択 | 画面表示を消しログファイルを削除しない |
+| INT-NYANRAD-004-RUNSAVEFAIL | exception | 未保存時に保存して実行を選択し保存が失敗 | 新規起動せず対象別の失敗と未保存内容を示す |
+| INT-NYANRAD-004-RUNMISSING | exception | 指定された実行ファイルが見つからない | 起動失敗を対象とともに表示する |
+| INT-NYANRAD-004-PORTCONFLICT | exception | 対象のポートを使用できない | 対象と競合を表示し既存サービスを自動停止しない |
+| INT-NYANRAD-004-LOGFAIL | exception | 対象のログを取得できない | ログが空と誤認させず取得失敗を表示する |
 
-検討中の部分集合。追加した選択と例外を含め、正式候補の全範囲・人間の承認・Baselineは未成立。図と構造化資料の最終的な意味一致の確認も継続する。
+検討中の部分集合。未実証の技術成立や提供条件を含み、正式候補・Baseline・実装開始は未成立。DB動作やIDE外実行の検証組合せは[網羅性確認表](../coverage-review.md)で追跡。
