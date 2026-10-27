@@ -79,6 +79,48 @@
       "name": "通常ソースを取り出す",
       "source_interface_id": "UI-NYANRAD-004",
       "business_trigger": "通常ソースを取り出す"
+    },
+    {
+      "event_id": "EVT-NYANRAD-004-UNSAVED",
+      "name": "未保存で実行",
+      "source_interface_id": "UI-NYANRAD-004",
+      "business_trigger": "未保存で実行"
+    },
+    {
+      "event_id": "EVT-NYANRAD-004-RUNSAVE",
+      "name": "未保存：保存して実行",
+      "source_interface_id": "UI-NYANRAD-004",
+      "business_trigger": "未保存：保存して実行"
+    },
+    {
+      "event_id": "EVT-NYANRAD-004-RUNSAVED",
+      "name": "未保存：保存済み内容で実行",
+      "source_interface_id": "UI-NYANRAD-004",
+      "business_trigger": "未保存：保存済み内容で実行"
+    },
+    {
+      "event_id": "EVT-NYANRAD-004-RUNCANCEL",
+      "name": "未保存：中止",
+      "source_interface_id": "UI-NYANRAD-004",
+      "business_trigger": "未保存：中止"
+    },
+    {
+      "event_id": "EVT-NYANRAD-004-RESTART",
+      "name": "実行済みの対象を再実行",
+      "source_interface_id": "UI-NYANRAD-004",
+      "business_trigger": "実行済みの対象を再実行"
+    },
+    {
+      "event_id": "EVT-NYANRAD-004-STOPFAIL",
+      "name": "停止",
+      "source_interface_id": "UI-NYANRAD-004",
+      "business_trigger": "停止"
+    },
+    {
+      "event_id": "EVT-NYANRAD-004-CLEAR",
+      "name": "ログ表示をクリア",
+      "source_interface_id": "UI-NYANRAD-004",
+      "business_trigger": "ログ表示をクリア"
     }
   ],
   "functions": [
@@ -166,6 +208,86 @@
       ],
       "business_rules": [
         "対象の保存済み内容を確認できる"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-004-UNSAVED",
+      "name": "未保存時の実行方法を選ぶ",
+      "business_purpose": "アプリを実行して動作を確認する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "未保存変更がある"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-004-RUNSAVE",
+      "name": "保存してから対象を実行する",
+      "business_purpose": "アプリを実行して動作を確認する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "保存して実行を選び保存が成功"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-004-RUNSAVED",
+      "name": "保存済み内容で対象を実行する",
+      "business_purpose": "アプリを実行して動作を確認する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "保存済み内容で実行を選択し部分保存でない"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-004-RUNCANCEL",
+      "name": "未保存時の実行を中止する",
+      "business_purpose": "アプリを実行して動作を確認する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "中止を選択"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-004-RESTART",
+      "name": "対象を停止してから再実行する",
+      "business_purpose": "アプリを実行して動作を確認する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "同じ対象が実行済みで停止完了を確認"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-004-STOPFAIL",
+      "name": "停止失敗を表示する",
+      "business_purpose": "アプリを実行して動作を確認する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "終了を確認できない"
+      ],
+      "exception_results": [
+        "成功扱いせず失敗または不明と表示する"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-004-CLEAR",
+      "name": "ログの画面表示だけを消す",
+      "business_purpose": "アプリを実行して動作を確認する",
+      "normal_result": [
+        "画面表示を消しログファイルを削除しない"
+      ],
+      "business_rules": [
+        "表示クリアを選択"
       ]
     }
   ],
@@ -436,6 +558,251 @@
         "planning/requirements/23-formalization-map.md",
         "planning/requirements/09-functions.md",
         "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-UNSAVED",
+      "name": "未保存時の実行方法を選ぶ",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-004",
+      "event_id": "EVT-NYANRAD-004-UNSAVED",
+      "function_id": "FN-NYANRAD-004-UNSAVED",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-004-1",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-004",
+      "preconditions": [
+        "未保存変更がある"
+      ],
+      "expected_results": [
+        "保存して実行・保存済み内容で実行・中止の選択を示す"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-004"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-RUNSAVE",
+      "name": "保存してから対象を実行する",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-004",
+      "event_id": "EVT-NYANRAD-004-RUNSAVE",
+      "function_id": "FN-NYANRAD-004-RUNSAVE",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-004-1",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-004-2",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-004",
+      "preconditions": [
+        "保存して実行を選び保存が成功"
+      ],
+      "expected_results": [
+        "保存した内容で対象を起動する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-004"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-RUNSAVED",
+      "name": "保存済み内容で対象を実行する",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-004",
+      "event_id": "EVT-NYANRAD-004-RUNSAVED",
+      "function_id": "FN-NYANRAD-004-RUNSAVED",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-004-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-004-2",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-004",
+      "preconditions": [
+        "保存済み内容で実行を選択し部分保存でない"
+      ],
+      "expected_results": [
+        "未保存編集を保持して保存済み内容で起動する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-004"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-RUNCANCEL",
+      "name": "未保存時の実行を中止する",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-004",
+      "event_id": "EVT-NYANRAD-004-RUNCANCEL",
+      "function_id": "FN-NYANRAD-004-RUNCANCEL",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-004-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-004-2",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-004",
+      "preconditions": [
+        "中止を選択"
+      ],
+      "expected_results": [
+        "起動せず未保存内容を保持する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-004"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-RESTART",
+      "name": "対象を停止してから再実行する",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-004",
+      "event_id": "EVT-NYANRAD-004-RESTART",
+      "function_id": "FN-NYANRAD-004-RESTART",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-004-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-004-2",
+          "operations": [
+            "R",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-004",
+      "preconditions": [
+        "同じ対象が実行済みで停止完了を確認"
+      ],
+      "expected_results": [
+        "二重起動せず停止後に再実行する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-004"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-STOPFAIL",
+      "name": "停止失敗を表示する",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-004",
+      "event_id": "EVT-NYANRAD-004-STOPFAIL",
+      "function_id": "FN-NYANRAD-004-STOPFAIL",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-004-2",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-004-3",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-004",
+      "preconditions": [
+        "終了を確認できない"
+      ],
+      "expected_results": [
+        "成功扱いせず失敗または不明と表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-004"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-CLEAR",
+      "name": "ログの画面表示だけを消す",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-004",
+      "event_id": "EVT-NYANRAD-004-CLEAR",
+      "function_id": "FN-NYANRAD-004-CLEAR",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-004-3",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-004",
+      "preconditions": [
+        "表示クリアを選択"
+      ],
+      "expected_results": [
+        "画面表示を消しログファイルを削除しない"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-004"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
       ]
     }
   ],
