@@ -1,7 +1,7 @@
 {
   "status": "draft",
-  "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
-  "note": "検討用の部分集合。元資料・行・JSON Pointer対応を検証する準備表であり、正式Mapping Manifestではない。",
+  "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
+  "note": "検討中。各Interactionの図・表・構造化位置と元資料を対応づける準備表。正式Mapping Manifestではない。",
   "entries": [
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -256,6 +256,42 @@
       "structured_pointer": "/interactions/13"
     },
     {
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "interaction_id": "INT-NYANRAD-001-EMPTYDIR",
+      "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
+      "source_path": "planning/requirements/22-operation-decisions.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-001/review.md",
+      "human_row": 15,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-001/flow.svg",
+      "diagram_row": 15,
+      "mermaid_nodes": [
+        "U14",
+        "F14",
+        "D14",
+        "R14"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
+      "structured_pointer": "/interactions/14"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "interaction_id": "INT-NYANRAD-001-CREATEFAIL",
+      "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
+      "source_path": "planning/requirements/22-operation-decisions.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-001/review.md",
+      "human_row": 16,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-001/flow.svg",
+      "diagram_row": 16,
+      "mermaid_nodes": [
+        "U15",
+        "F15",
+        "D15",
+        "R15"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
+      "structured_pointer": "/interactions/15"
+    },
+    {
       "ifdam_id": "IFDAM-NYANRAD-002",
       "interaction_id": "INT-NYANRAD-002-EDIT",
       "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
@@ -470,6 +506,78 @@
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
       "structured_pointer": "/interactions/11"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "interaction_id": "INT-NYANRAD-002-CLIP",
+      "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
+      "source_path": "planning/requirements/22-operation-decisions.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-002/review.md",
+      "human_row": 13,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.svg",
+      "diagram_row": 13,
+      "mermaid_nodes": [
+        "U12",
+        "F12",
+        "D12",
+        "R12"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
+      "structured_pointer": "/interactions/12"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "interaction_id": "INT-NYANRAD-002-UNDODELETE",
+      "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
+      "source_path": "planning/requirements/22-operation-decisions.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-002/review.md",
+      "human_row": 14,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.svg",
+      "diagram_row": 14,
+      "mermaid_nodes": [
+        "U13",
+        "F13",
+        "D13",
+        "R13"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
+      "structured_pointer": "/interactions/13"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "interaction_id": "INT-NYANRAD-002-UNDOAFTERSAVE",
+      "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
+      "source_path": "planning/requirements/22-operation-decisions.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-002/review.md",
+      "human_row": 15,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.svg",
+      "diagram_row": 15,
+      "mermaid_nodes": [
+        "U14",
+        "F14",
+        "D14",
+        "R14"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
+      "structured_pointer": "/interactions/14"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "interaction_id": "INT-NYANRAD-002-ALIGN",
+      "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
+      "source_path": "planning/requirements/22-operation-decisions.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-002/review.md",
+      "human_row": 16,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.svg",
+      "diagram_row": 16,
+      "mermaid_nodes": [
+        "U15",
+        "F15",
+        "D15",
+        "R15"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
+      "structured_pointer": "/interactions/15"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-003",
@@ -776,6 +884,78 @@
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
       "structured_pointer": "/interactions/13"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "interaction_id": "INT-NYANRAD-004-RUNSAVEFAIL",
+      "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
+      "source_path": "planning/requirements/22-operation-decisions.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-004/review.md",
+      "human_row": 15,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-004/flow.svg",
+      "diagram_row": 15,
+      "mermaid_nodes": [
+        "U14",
+        "F14",
+        "D14",
+        "R14"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
+      "structured_pointer": "/interactions/14"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "interaction_id": "INT-NYANRAD-004-RUNMISSING",
+      "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
+      "source_path": "planning/requirements/22-operation-decisions.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-004/review.md",
+      "human_row": 16,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-004/flow.svg",
+      "diagram_row": 16,
+      "mermaid_nodes": [
+        "U15",
+        "F15",
+        "D15",
+        "R15"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
+      "structured_pointer": "/interactions/15"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "interaction_id": "INT-NYANRAD-004-PORTCONFLICT",
+      "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
+      "source_path": "planning/requirements/22-operation-decisions.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-004/review.md",
+      "human_row": 17,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-004/flow.svg",
+      "diagram_row": 17,
+      "mermaid_nodes": [
+        "U16",
+        "F16",
+        "D16",
+        "R16"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
+      "structured_pointer": "/interactions/16"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "interaction_id": "INT-NYANRAD-004-LOGFAIL",
+      "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
+      "source_path": "planning/requirements/22-operation-decisions.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-004/review.md",
+      "human_row": 18,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-004/flow.svg",
+      "diagram_row": 18,
+      "mermaid_nodes": [
+        "U17",
+        "F17",
+        "D17",
+        "R17"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
+      "structured_pointer": "/interactions/17"
     }
   ],
   "updated_at": "2026-10-27"
