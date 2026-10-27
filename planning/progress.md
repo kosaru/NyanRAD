@@ -96,3 +96,5 @@
 - 2026-10-27：U01〜U04具体案全体への人間の了承を記録。競合、新規作成先、名前・座標・行キー、ログの扱いをUI・機能・データ・受入条件・統合資料へ同期。利用上の４残件を判断済みとし、設計・技術成立・提供条件・正式資料整備へ進む。
 
 - 2026-10-27：[IFDAM初稿](ifdam/README.md)として４つの仕事・22 Interactionを作成。構造化JSON・Mermaid・SVG・確認表・対応表とSchema固定参照を保存。Schema、ID、内部参照、Mapping位置、SVG XMLを検証。操作網羅性・画像表示・正式Mapping・Snapshot・Candidate完成は未確認／未成立。次は不足Interactionの補完と表示・意味一致の確認。
+
+- 2026-10-27：IFDAM初稿を22から43 Interactionへ補完。競合・未保存時の選択、コピー・名前変更・行選択・停止失敗・ログ消去表示を追加。Schema・全IFDAM間ID・参照・対応表・SVG形式を確認。Quick Lookは４図生成、003・004のプレビュー一部を目視。全領域・全要求網羅と意味一致は未確認。正式Candidate・Baseline・実装開始は未成立。
