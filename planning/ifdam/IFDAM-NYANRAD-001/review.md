@@ -18,5 +18,7 @@
 | INT-NYANRAD-001-SWITCHDISCARD | alternative | 未保存で切替時に破棄を選択 | 対象の未保存内容を破棄し切替・再読込を行う |
 | INT-NYANRAD-001-SWITCHCANCEL | alternative | 未保存で切替時に中止 | 編集中の内容を保持する |
 | INT-NYANRAD-001-SWITCHFAIL | exception | 切替前の保存が失敗 | 成功扱いせず対象別結果と未保存内容を示す |
+| INT-NYANRAD-001-EMPTYDIR | alternative | 作成先が存在するが空であり生成直前に再確認できた | 作成したプロジェクトを表示する |
+| INT-NYANRAD-001-CREATEFAIL | exception | 作成途中で失敗した | 作成済み対象と失敗を示しフォルダ全体を自動削除しない |
 
-検討中の部分集合。追加した選択と例外を含め、正式候補の全範囲・人間の承認・Baselineは未成立。図と構造化資料の最終的な意味一致の確認も継続する。
+検討中の部分集合。未実証の技術成立や提供条件を含み、正式候補・Baseline・実装開始は未成立。DB動作やIDE外実行の検証組合せは[網羅性確認表](../coverage-review.md)で追跡。
