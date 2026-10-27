@@ -185,3 +185,9 @@ DB資料・受入条件・受付記録・進捗へ同期。正式Baseline・実�
 要求者：「Aで進めて」。対象は[A・B比較案](https://github.com/kosaru/NyanRAD/blob/98fee5005d0cd748d998961d209b1c202324fc14/planning/requirements/24-event-handler-options.md)。Aを採用する。イベント処理が未作成なら、イベントを選んで開いたとき編集用の雛形を未保存で表示し、保存時にファイルへ反映する。開いただけでは保存済みファイルを変更せず、既存の手書き本文は勝手に再生成・上書きしない。
 
 イベント引数の具体的な署名・値型、雛形のコード形、技術成立、正式Baseline・実装開始・リリースはこの判断で確定しない。
+
+## 2026-10-27 実装言語とNyanPUI利用の再確認
+
+要求者：「HTML＋CSS＋Java ScriptがNyanRADの前提になっているのは覚えてる？もちろんNyanPUIの機能は使っていいけど。」
+
+既存のHTML・CSS・JavaScriptによる構築とNyanPUIの機能利用の方針を維持する。正式Baselineや実装開始の承認には読み替えない。

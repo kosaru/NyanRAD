@@ -120,3 +120,5 @@
 - 2026-10-27：要求者が初回イベント処理のA案を選択。未作成時は未保存の雛形を表示し保存時に反映、既存本文を保護する方針を要件・IFDAMへ同期。署名・値型・コード形、技術実証・正式Baseline・実装開始は未成立。
 
 - 2026-10-27：NyanPUI・NyanQL・Nyan8の現在のmainを固定して保存とコマンド処理を静的再確認。[調査](requirements/25-runtime-capability-review.md)にソースの根拠、未実証の実行管理・競合条件を整理。配布版とmacOSでの動作は未確認。正式Baseline・実装開始は未成立。
+
+- 2026-10-27：固定Commit `ec00ea33ff5cab9708141ca2677217a0fa326750`を対象に58処理の確認表・構造化資料・個別Mermaidの対応を点検し、[要件参照の整理](ifdam/source-review.md)と105件の参照索引を作成。参照先の存在を確認したが、意味の完全一致、正式Mapping・Snapshot・Baselineと実装開始は未成立。

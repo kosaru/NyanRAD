@@ -1,0 +1,1108 @@
+{
+  "status": "draft",
+  "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+  "purpose": "人間向け資料の関連箇所への入口。意味一致、正式Mapping、承認Snapshotではない。",
+  "entries": [
+    {
+      "interaction_id": "INT-NYANRAD-001-CREATE",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-OPEN",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-SAVE",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-CONFLICT",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## U01：外部変更との競合",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-SAVEFAIL",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 実行・停止の追加方針の確認",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-EXISTS",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## U02：新規作成先にファイルがある",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-RELOAD",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## U01：外部変更との競合",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-OVERWRITE",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## U01：外部変更との競合",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-CANCEL",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## U01：外部変更との競合",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-RECHECK",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## U01：外部変更との競合",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-SWITCHSAVE",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 今回確認された操作方針",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-SWITCHDISCARD",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 今回確認された操作方針",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-SWITCHCANCEL",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 今回確認された操作方針",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-SWITCHFAIL",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 今回確認された操作方針",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-EMPTYDIR",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## U02：新規作成先にファイルがある",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-CREATEFAIL",
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## プロジェクトを作成・再開する（WS-NYANRAD-001候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## U02：新規作成先にファイルがある",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-EDIT",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "### 配置",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-EVENT",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/24-event-handler-options.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 2026-10-27 初回イベント処理の人間判断",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-DELETE",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 今回確認された操作方針",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-UNDO",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/13-editing-details.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "# NyanRAD 編集操作の細目案",
+          "marker": "| Undo／Redo |",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-INVALID",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "### 配置",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-UNSUPPORTED",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-COPY",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/13-editing-details.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "# NyanRAD 編集操作の細目案",
+          "marker": "| 部品コピー |",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-RENAME",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/13-editing-details.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "# NyanRAD 編集操作の細目案",
+          "marker": "| 部品名の変更 |",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-ROWKEY",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "### 一覧表の行識別",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-ROWINDEX",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "### 一覧表の行識別",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-ROWDUP",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "### 一覧表の行識別",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-ROWRELOAD",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "### 一覧表の行識別",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-CLIP",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/22-operation-decisions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "### 配置",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-UNDODELETE",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/13-editing-details.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "# NyanRAD 編集操作の細目案",
+          "marker": "| 部品削除のUndo |",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-UNDOAFTERSAVE",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/13-editing-details.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "# NyanRAD 編集操作の細目案",
+          "marker": "| 保存と履歴 |",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-ALIGN",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-003-OPEN",
+      "ifdam_id": "IFDAM-NYANRAD-003",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## サーバー処理・SQLと接続を編集する（WS-NYANRAD-003候補）",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-003-EDIT",
+      "ifdam_id": "IFDAM-NYANRAD-003",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## サーバー処理・SQLと接続を編集する（WS-NYANRAD-003候補）",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-003-ERROR",
+      "ifdam_id": "IFDAM-NYANRAD-003",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## サーバー処理・SQLと接続を編集する（WS-NYANRAD-003候補）",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-START",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 実行ボタンから結果確認まで",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-BLOCK",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 実行ボタンから結果確認まで",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-PARTIAL",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 一部だけ起動できた場合",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-STOP",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 停止と状態確認",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-UNKNOWN",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 停止と状態確認",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-LOG",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## ログの表示案",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-EXPORT",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 実行ボタンから結果確認まで",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-UNSAVED",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 実行ボタンから結果確認まで",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-RUNSAVE",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 実行ボタンから結果確認まで",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-RUNSAVED",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 実行ボタンから結果確認まで",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-RUNCANCEL",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 実行ボタンから結果確認まで",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-RESTART",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 実行ボタンから結果確認まで",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-STOPFAIL",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 停止と状態確認",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-CLEAR",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## ログの表示案",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-RUNSAVEFAIL",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 実行ボタンから結果確認まで",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-RUNMISSING",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 実行ボタンから結果確認まで",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-PORTCONFLICT",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## 実行ボタンから結果確認まで",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-004-LOGFAIL",
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## アプリを実行して動作を確認する（WS-NYANRAD-004候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/16-run-lifecycle.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## ログの表示案",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-FORMADD",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-FORMSWITCH",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-CODEEDIT",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-FORMLOAD",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/13-editing-details.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "# NyanRAD 編集操作の細目案",
+          "marker": "| フォームLoad |",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-EVENTARGS",
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "references": [
+        {
+          "repository_path": "planning/requirements/09-functions.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "## フォームと画面イベントを編集する（WS-NYANRAD-002候補）",
+          "role": "related_context"
+        },
+        {
+          "repository_path": "planning/requirements/13-editing-details.md",
+          "source_commit": "ec00ea33ff5cab9708141ca2677217a0fa326750",
+          "section": "# NyanRAD 編集操作の細目案",
+          "marker": "| イベント引数 |",
+          "role": "related_context"
+        }
+      ],
+      "status": "draft",
+      "note": "要件資料内の関連箇所を示す入口。条件・結果のすべてをこの参照だけで立証した意味ではない。"
+    }
+  ]
+}

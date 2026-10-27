@@ -60,3 +60,7 @@ CPU・OS版・ブラウザ版の細目は最終的な提供・検証条件とし
 この資料は構成案と不足の整理であり、保存・実行管理の動作保証や実装完了の報告ではない。
 
 参照：[既存機能調査](04a-local-feasibility.md)、[機能](09-functions.md)、[提供条件](14-delivery-conditions.md)
+
+## 2026-10-27 前提の再確認
+
+要求者は「HTML＋CSS＋Java ScriptがNyanRADの前提になっているのは覚えてる？もちろんNyanPUIの機能は使っていいけど。」と確認した。HTML・CSS・JavaScriptを前提とし、NyanPUIの既存機能を利用できるという既存方針を維持する。技術成立・正式Baseline・実装開始の確認ではない。
