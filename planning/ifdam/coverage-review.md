@@ -55,3 +55,7 @@ Workset・IFDAM・Interactionの最終境界、人間向け固定Snapshot、正�
 ## 追記：同期修正後
 
 フォーム追加・切替を追加し、全体は55 Interactionとなった。旧版の分割図７枚は全領域を目視したが、修正版の画像表示確認、Mermaidからの正式レンダリングおよび意味の完全一致は未完了。[照合・修正メモ](semantic-visual-review.md)参照。
+
+## 追記：修正後の表示と表現の確認
+
+修正後の７分割図を目視し、図の凡例の欠落を修正。55処理のJSON・Mermaid・SVG・表の対応文言を照合して差分なし。Mermaidから４図を一時生成したが、横幅・Interaction ID・種別・終了Interfaceの表示が承認用の課題として残る。これは要求と例外の網羅性の完了や技術的な動作実証を意味しない。[照合メモ](semantic-visual-review.md)参照。

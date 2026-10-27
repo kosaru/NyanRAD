@@ -10,7 +10,7 @@
 
 各フォルダに構造化JSON、Mermaidソース、同じデータから生成したSVG、確認用の表を保存。
 [対応表](mapping.json)は図の行・Mermaidノード・構造化JSON位置・元資料Commitを対応づける検討用の準備表。正式なMapping Manifestではない。
-[検証結果](validation.json)はSchema・全IFDAM間のID一意性・参照・対応表・SVG XMLの確認。旧版の分割図７枚は全範囲を目視した。今回修正した図の画像表示と意味の完全一致は未確認。
+[検証結果](validation.json)はSchema・全IFDAM間のID一意性・参照・対応表・SVG XMLの確認。修正後の分割図７枚を目視し、凡例を追加した。55処理の表示文言をJSON・Mermaid・SVG・表で照合済み。元要件との意味の完全一致は未確認。
 
 今回、フォーム追加・切替と既存要件のコピー・名称変更・保存失敗の不足を反映した。前回、新規作成の途中失敗、フォーム外へのはみ出し、削除Undo・保存後Undo・整列、保存失敗による実行中止、起動対象不足・ポート競合・ログ取得失敗を追加した。
 SQLite・DuckDBと直接／Nyan8経由の４組は検証対象として記録し、実行は未実施。生成アプリの任意の業務画面をIDEの固定UIとして決めない。
@@ -20,4 +20,4 @@ Schema適合を要件承認・正式Baseline・引渡し可能・実装開始へ
 
 Schema出典：kosaru/AI-powered-development の schemas/ifdam.schema.yaml、Blob 84b70d9377b467c28ab4aeecf620201446bb9876。コピーは検証用固定参照。
 
-[照合・修正メモ](semantic-visual-review.md)。図は検討用に構造化データから生成したSVGであり、Mermaidからの正式レンダリングは未確認。
+[照合・修正メモ](semantic-visual-review.md)。図は検討用に構造化データから生成したSVGであり、Mermaidから４図の一時生成を確認したが、承認用の可読性と追跡性の改善が必要。

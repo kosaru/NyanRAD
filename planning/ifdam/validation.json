@@ -3,8 +3,8 @@
   "schema_repository": "kosaru/AI-powered-development",
   "schema_path": "schemas/ifdam.schema.yaml",
   "schema_blob": "84b70d9377b467c28ab4aeecf620201446bb9876",
-  "source_commit": "042a2b9d1eba3fa00bc080c03ffacbc3d9124a74",
-  "note": "source_commit は修正前に確認した資料起点。検証対象は同じ更新で保存される資料。",
+  "source_commit": "42f458be9beea47e92fa3cdf3685a1bf311f60a4",
+  "note": "確認対象の既存資料のCommit。凡例表示の更新は本記録と同じ変更に含む。",
   "ifdams": 4,
   "interactions": 55,
   "checks": {
@@ -14,13 +14,14 @@
     "mapping_json_pointers": "pass",
     "review_rows_and_mermaid_results": "pass",
     "svg_xml": "pass (更新11ファイル)",
-    "visual": "旧版は７分割を目視、修正版の画像表示は未確認"
+    "visual": "修正前7分割図を全範囲目視、凡例追加後は代表ページを目視",
+    "cross_representation": "55処理の開始・イベント・機能・データ名とCRUD・結果をJSON/Mermaid/SVG、条件と結果を表で文字照合、差分なし",
+    "mermaid_render": "Mermaid 12.2.0で4図生成成功。大きな横幅、Interaction ID・種別および終了Interfaceの図上明示に課題"
   },
   "not_verified": [
-    "修正後SVGの画像表示・全領域の可読性",
-    "Mermaidからの正式レンダリング",
+    "Mermaid由来の承認用図の可読性・IDと種別・終了Interfaceの表示",
     "全要求・例外のInteraction網羅性",
-    "図と構造化資料の意味の完全一致",
+    "元要件と図・構造化資料の意味の完全一致",
     "DB・接続の４組の実行",
     "人間の正式承認",
     "実行管理の動作"
