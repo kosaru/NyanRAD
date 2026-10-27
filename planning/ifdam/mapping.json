@@ -1,0 +1,403 @@
+{
+  "status": "draft",
+  "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+  "note": "正式Mapping Manifestではない。参照・行・JSON Pointerを検証する準備表。",
+  "entries": [
+    {
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "interaction_id": "INT-NYANRAD-001-CREATE",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-001/review.md",
+      "human_row": 1,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-001/flow.svg",
+      "diagram_row": 1,
+      "mermaid_nodes": [
+        "U0",
+        "F0",
+        "D0",
+        "R0"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
+      "structured_pointer": "/interactions/0"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "interaction_id": "INT-NYANRAD-001-OPEN",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-001/review.md",
+      "human_row": 2,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-001/flow.svg",
+      "diagram_row": 2,
+      "mermaid_nodes": [
+        "U1",
+        "F1",
+        "D1",
+        "R1"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
+      "structured_pointer": "/interactions/1"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "interaction_id": "INT-NYANRAD-001-SAVE",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-001/review.md",
+      "human_row": 3,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-001/flow.svg",
+      "diagram_row": 3,
+      "mermaid_nodes": [
+        "U2",
+        "F2",
+        "D2",
+        "R2"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
+      "structured_pointer": "/interactions/2"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "interaction_id": "INT-NYANRAD-001-CONFLICT",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-001/review.md",
+      "human_row": 4,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-001/flow.svg",
+      "diagram_row": 4,
+      "mermaid_nodes": [
+        "U3",
+        "F3",
+        "D3",
+        "R3"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
+      "structured_pointer": "/interactions/3"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "interaction_id": "INT-NYANRAD-001-SAVEFAIL",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-001/review.md",
+      "human_row": 5,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-001/flow.svg",
+      "diagram_row": 5,
+      "mermaid_nodes": [
+        "U4",
+        "F4",
+        "D4",
+        "R4"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
+      "structured_pointer": "/interactions/4"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-001",
+      "interaction_id": "INT-NYANRAD-001-EXISTS",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-001/review.md",
+      "human_row": 6,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-001/flow.svg",
+      "diagram_row": 6,
+      "mermaid_nodes": [
+        "U5",
+        "F5",
+        "D5",
+        "R5"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
+      "structured_pointer": "/interactions/5"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "interaction_id": "INT-NYANRAD-002-EDIT",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-002/review.md",
+      "human_row": 1,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.svg",
+      "diagram_row": 1,
+      "mermaid_nodes": [
+        "U0",
+        "F0",
+        "D0",
+        "R0"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
+      "structured_pointer": "/interactions/0"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "interaction_id": "INT-NYANRAD-002-EVENT",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-002/review.md",
+      "human_row": 2,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.svg",
+      "diagram_row": 2,
+      "mermaid_nodes": [
+        "U1",
+        "F1",
+        "D1",
+        "R1"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
+      "structured_pointer": "/interactions/1"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "interaction_id": "INT-NYANRAD-002-DELETE",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-002/review.md",
+      "human_row": 3,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.svg",
+      "diagram_row": 3,
+      "mermaid_nodes": [
+        "U2",
+        "F2",
+        "D2",
+        "R2"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
+      "structured_pointer": "/interactions/2"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "interaction_id": "INT-NYANRAD-002-UNDO",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-002/review.md",
+      "human_row": 4,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.svg",
+      "diagram_row": 4,
+      "mermaid_nodes": [
+        "U3",
+        "F3",
+        "D3",
+        "R3"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
+      "structured_pointer": "/interactions/3"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "interaction_id": "INT-NYANRAD-002-INVALID",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-002/review.md",
+      "human_row": 5,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.svg",
+      "diagram_row": 5,
+      "mermaid_nodes": [
+        "U4",
+        "F4",
+        "D4",
+        "R4"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
+      "structured_pointer": "/interactions/4"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "interaction_id": "INT-NYANRAD-002-UNSUPPORTED",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-002/review.md",
+      "human_row": 6,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.svg",
+      "diagram_row": 6,
+      "mermaid_nodes": [
+        "U5",
+        "F5",
+        "D5",
+        "R5"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
+      "structured_pointer": "/interactions/5"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-003",
+      "interaction_id": "INT-NYANRAD-003-OPEN",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-003/review.md",
+      "human_row": 1,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-003/flow.svg",
+      "diagram_row": 1,
+      "mermaid_nodes": [
+        "U0",
+        "F0",
+        "D0",
+        "R0"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-003/ifdam.json",
+      "structured_pointer": "/interactions/0"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-003",
+      "interaction_id": "INT-NYANRAD-003-EDIT",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-003/review.md",
+      "human_row": 2,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-003/flow.svg",
+      "diagram_row": 2,
+      "mermaid_nodes": [
+        "U1",
+        "F1",
+        "D1",
+        "R1"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-003/ifdam.json",
+      "structured_pointer": "/interactions/1"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-003",
+      "interaction_id": "INT-NYANRAD-003-ERROR",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-003/review.md",
+      "human_row": 3,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-003/flow.svg",
+      "diagram_row": 3,
+      "mermaid_nodes": [
+        "U2",
+        "F2",
+        "D2",
+        "R2"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-003/ifdam.json",
+      "structured_pointer": "/interactions/2"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "interaction_id": "INT-NYANRAD-004-START",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-004/review.md",
+      "human_row": 1,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-004/flow.svg",
+      "diagram_row": 1,
+      "mermaid_nodes": [
+        "U0",
+        "F0",
+        "D0",
+        "R0"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
+      "structured_pointer": "/interactions/0"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "interaction_id": "INT-NYANRAD-004-BLOCK",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-004/review.md",
+      "human_row": 2,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-004/flow.svg",
+      "diagram_row": 2,
+      "mermaid_nodes": [
+        "U1",
+        "F1",
+        "D1",
+        "R1"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
+      "structured_pointer": "/interactions/1"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "interaction_id": "INT-NYANRAD-004-PARTIAL",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-004/review.md",
+      "human_row": 3,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-004/flow.svg",
+      "diagram_row": 3,
+      "mermaid_nodes": [
+        "U2",
+        "F2",
+        "D2",
+        "R2"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
+      "structured_pointer": "/interactions/2"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "interaction_id": "INT-NYANRAD-004-STOP",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-004/review.md",
+      "human_row": 4,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-004/flow.svg",
+      "diagram_row": 4,
+      "mermaid_nodes": [
+        "U3",
+        "F3",
+        "D3",
+        "R3"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
+      "structured_pointer": "/interactions/3"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "interaction_id": "INT-NYANRAD-004-UNKNOWN",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-004/review.md",
+      "human_row": 5,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-004/flow.svg",
+      "diagram_row": 5,
+      "mermaid_nodes": [
+        "U4",
+        "F4",
+        "D4",
+        "R4"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
+      "structured_pointer": "/interactions/4"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "interaction_id": "INT-NYANRAD-004-LOG",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-004/review.md",
+      "human_row": 6,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-004/flow.svg",
+      "diagram_row": 6,
+      "mermaid_nodes": [
+        "U5",
+        "F5",
+        "D5",
+        "R5"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
+      "structured_pointer": "/interactions/5"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-004",
+      "interaction_id": "INT-NYANRAD-004-EXPORT",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_path": "planning/requirements/23-formalization-map.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-004/review.md",
+      "human_row": 7,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-004/flow.svg",
+      "diagram_row": 7,
+      "mermaid_nodes": [
+        "U6",
+        "F6",
+        "D6",
+        "R6"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
+      "structured_pointer": "/interactions/6"
+    }
+  ]
+}
