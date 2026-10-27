@@ -341,7 +341,8 @@
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
       "structured_pointer": "/interactions/0",
       "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/01.mmd",
-      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/01.svg"
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/01.svg",
+      "supplementary_review_path": "planning/ifdam/editing-conditions-review.md"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -381,7 +382,8 @@
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
       "structured_pointer": "/interactions/2",
       "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/03.mmd",
-      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/03.svg"
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/03.svg",
+      "supplementary_review_path": "planning/ifdam/editing-conditions-review.md"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -401,7 +403,8 @@
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
       "structured_pointer": "/interactions/3",
       "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/04.mmd",
-      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/04.svg"
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/04.svg",
+      "supplementary_review_path": "planning/ifdam/editing-conditions-review.md"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -421,7 +424,8 @@
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
       "structured_pointer": "/interactions/4",
       "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/05.mmd",
-      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/05.svg"
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/05.svg",
+      "supplementary_review_path": "planning/ifdam/editing-conditions-review.md"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -481,7 +485,8 @@
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
       "structured_pointer": "/interactions/7",
       "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/08.mmd",
-      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/08.svg"
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/08.svg",
+      "supplementary_review_path": "planning/ifdam/editing-conditions-review.md"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -601,7 +606,8 @@
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
       "structured_pointer": "/interactions/13",
       "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/14.mmd",
-      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/14.svg"
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/14.svg",
+      "supplementary_review_path": "planning/ifdam/editing-conditions-review.md"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -621,7 +627,8 @@
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
       "structured_pointer": "/interactions/14",
       "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/15.mmd",
-      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/15.svg"
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/15.svg",
+      "supplementary_review_path": "planning/ifdam/editing-conditions-review.md"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -681,7 +688,8 @@
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-003/ifdam.json",
       "structured_pointer": "/interactions/1",
       "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-003/diagrams/02.mmd",
-      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-003/diagrams/02.svg"
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-003/diagrams/02.svg",
+      "supplementary_review_path": "planning/ifdam/editing-conditions-review.md"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-003",

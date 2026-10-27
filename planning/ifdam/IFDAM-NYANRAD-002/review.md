@@ -30,3 +30,5 @@
 | [INT-NYANRAD-002-FORMSWITCH](diagrams/18.svg) | normal | 対象フォームを選択 | 選択したフォームを表示する |
 
 検討中の部分集合。未実証の技術成立や提供条件を含み、正式候補・Baseline・実装開始は未成立。DB動作やIDE外実行の検証組合せは[網羅性確認表](../coverage-review.md)で追跡。
+
+関連する既存の編集条件・データの区別は[編集条件の補足](../editing-conditions-review.md)を参照。フォームLoad等の未表現の流れも同補足で追跡する。

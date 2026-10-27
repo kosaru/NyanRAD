@@ -25,3 +25,5 @@ Schema出典：kosaru/AI-powered-development の schemas/ifdam.schema.yaml、Blo
 各確認表の処理IDから、Mermaidで生成した処理単位の個別図を開ける。全55図の生成・XML解析と一覧画像での目視を実施。GitHubの代表１図は表示を確認したが、小さく表示された。残りのGitHub上の個別表示と詳細な可読性は未確認。詳細は[照合メモ](semantic-visual-review.md)。
 
 [既存要件との意味の照合](requirements-semantic-audit.md)に、イベントの扱い、編集データ、履歴などの明示不足を記録。
+
+[編集条件の補足](editing-conditions-review.md)に配置・履歴・手書き保護・編集中データの既存方針と残る未表現の流れを整理。

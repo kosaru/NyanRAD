@@ -156,7 +156,8 @@
         "変更と未保存状態を表示する"
       ],
       "business_rules": [
-        "入力が有効"
+        "入力が有効",
+        "配置は整数CSSピクセルで、位置は0以上、幅・高さは1以上"
       ]
     },
     {
@@ -178,7 +179,8 @@
         "部品を削除し手書き本文を保持する"
       ],
       "business_rules": [
-        "対象部品を選択"
+        "対象部品を選択",
+        "IDE管理の結線は変更しても、手書き本文は保持する"
       ]
     },
     {
@@ -189,7 +191,9 @@
         "編集状態を更新し保存済みファイルは自動巻戻ししない"
       ],
       "business_rules": [
-        "対象操作の履歴がある"
+        "対象操作の履歴がある",
+        "コード編集の履歴と配置等の履歴を分ける",
+        "同じ編集セッションでの保存後も履歴を保ち、再読込・プロジェクト切替で区切る"
       ]
     },
     {
@@ -200,7 +204,8 @@
         "該当条件を判別し結果を返す"
       ],
       "business_rules": [
-        "名前重複・規則違反・不正な座標等"
+        "名前重複・規則違反・不正な座標等",
+        "配置は整数CSSピクセルで、位置は0以上、幅・高さは1以上"
       ],
       "exception_results": [
         "以前の値を保持し理由を表示する"
@@ -236,7 +241,9 @@
         "管理対象を更新し手書き本文への影響を示す。本文は無条件に文字列置換しない"
       ],
       "business_rules": [
-        "有効で重複しない識別名を入力"
+        "有効で重複しない識別名を入力",
+        "IDE管理の識別・CSS・結線の対応を更新する",
+        "手書き本文の参照への影響を示し、本文を残す"
       ]
     },
     {
@@ -305,7 +312,8 @@
         "部品と管理結線を戻し残る手書き本文を二重生成しない"
       ],
       "business_rules": [
-        "部品削除がUndoの対象である"
+        "部品削除がUndoの対象である",
+        "部品とIDE管理の結線を戻し、残存する手書き本文を二重生成しない"
       ]
     },
     {
@@ -316,7 +324,9 @@
         "該当条件を判別し結果を返す"
       ],
       "business_rules": [
-        "同じ編集セッションで保存後に対象操作をUndo"
+        "同じ編集セッションで保存後に対象操作をUndo",
+        "同じ編集セッションでの保存後も履歴を保つ",
+        "コード編集の履歴と配置等の履歴を分ける"
       ]
     },
     {
@@ -362,7 +372,7 @@
     {
       "data_store_id": "DS-NYANRAD-002-2",
       "name": "イベント対応・手書き本文",
-      "business_meaning": "イベント対応・手書き本文"
+      "business_meaning": "IDE管理のイベント対応・結線と手書き本文。管理対象の変更と本文の保持を区別する。"
     },
     {
       "data_store_id": "DS-NYANRAD-002-3",
@@ -408,7 +418,8 @@
       "source_locations": [
         "planning/requirements/23-formalization-map.md",
         "planning/requirements/09-functions.md",
-        "planning/requirements/10-data.md"
+        "planning/requirements/10-data.md",
+        "planning/requirements/22-operation-decisions.md"
       ]
     },
     {
@@ -492,7 +503,8 @@
       "source_locations": [
         "planning/requirements/23-formalization-map.md",
         "planning/requirements/09-functions.md",
-        "planning/requirements/10-data.md"
+        "planning/requirements/10-data.md",
+        "planning/requirements/13-editing-details.md"
       ]
     },
     {
@@ -538,7 +550,8 @@
       "source_locations": [
         "planning/requirements/23-formalization-map.md",
         "planning/requirements/09-functions.md",
-        "planning/requirements/10-data.md"
+        "planning/requirements/10-data.md",
+        "planning/requirements/13-editing-details.md"
       ]
     },
     {
@@ -575,7 +588,8 @@
       "source_locations": [
         "planning/requirements/23-formalization-map.md",
         "planning/requirements/09-functions.md",
-        "planning/requirements/10-data.md"
+        "planning/requirements/10-data.md",
+        "planning/requirements/22-operation-decisions.md"
       ]
     },
     {
@@ -926,7 +940,8 @@
       ],
       "source_locations": [
         "planning/requirements/22-operation-decisions.md",
-        "planning/requirements/20-consolidated-requirements.md"
+        "planning/requirements/20-consolidated-requirements.md",
+        "planning/requirements/13-editing-details.md"
       ]
     },
     {
@@ -964,7 +979,8 @@
       ],
       "source_locations": [
         "planning/requirements/22-operation-decisions.md",
-        "planning/requirements/20-consolidated-requirements.md"
+        "planning/requirements/20-consolidated-requirements.md",
+        "planning/requirements/13-editing-details.md"
       ]
     },
     {

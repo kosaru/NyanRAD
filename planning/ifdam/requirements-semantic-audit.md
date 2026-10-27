@@ -18,3 +18,7 @@
 参照：[統合要件](../requirements/20-consolidated-requirements.md)、[機能](../requirements/09-functions.md)、[データ](../requirements/10-data.md)、[編集細目](../requirements/13-editing-details.md)、[操作の決定](../requirements/22-operation-decisions.md)、[受入条件案](../requirements/18-acceptance-criteria.md)、[網羅性確認](coverage-review.md)。
 
 次は、上記の明示不足を既存合意と資料の範囲で同期し、表・構造化資料・Mermaid・図・対応表の整合性を再確認する。未決定のイベント署名や提供条件、技術成立を推測で確定しない。
+
+## 2026-10-27 編集条件の同期
+
+配置値、Undo・履歴、管理結線と手書き本文、編集中のサーバー処理・設定の区別を[編集条件の補足](editing-conditions-review.md)に整理し、002・003の構造化資料と確認表に反映した。データ名・図のCRUDの粒度は変更していないため、本文と結線の図上の区別は残る。Load、イベント引数、本文編集は独立したInteractionを追加しておらず、実行時・編集時を分けた整理が必要。署名・値型などの未決定事項は維持する。
