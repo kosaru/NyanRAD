@@ -98,3 +98,5 @@
 - 2026-10-27：[IFDAM初稿](ifdam/README.md)として４つの仕事・22 Interactionを作成。構造化JSON・Mermaid・SVG・確認表・対応表とSchema固定参照を保存。Schema、ID、内部参照、Mapping位置、SVG XMLを検証。操作網羅性・画像表示・正式Mapping・Snapshot・Candidate完成は未確認／未成立。次は不足Interactionの補完と表示・意味一致の確認。
 
 - 2026-10-27：IFDAM初稿を22から43 Interactionへ補完。競合・未保存時の選択、コピー・名前変更・行選択・停止失敗・ログ消去表示を追加。Schema・全IFDAM間ID・参照・対応表・SVG形式を確認。Quick Lookは４図生成、003・004のプレビュー一部を目視。全領域・全要求網羅と意味一致は未確認。正式Candidate・Baseline・実装開始は未成立。
+
+- 2026-10-27：要求16項目・受入条件をIFDAMと照合し、53 Interactionへ補完。[網羅性確認表](ifdam/coverage-review.md)に残る不足と両DB×両接続４組の未実施を記録。Schema・ID・参照・Mapping・SVG XMLは成功。４図の画像生成と先頭側目視を実施。全領域の目視、意味の完全一致、正式Candidateは未完了。
