@@ -13,7 +13,7 @@
 | 02 通常ソース | 001 OPEN／SAVE、004 EXPORT | 出力方式・対応版の実証 |
 | 03 macOSローカル | 004実行確認の前提 | 最低OS版・CPU・ブラウザ・実行ファイル版 |
 | 04 プロジェクト | 001 CREATE／OPEN／SAVEと既存・失敗・競合 | 途中失敗の復旧手順と技術成立 |
-| 05 フォーム | 002 EDITとプロジェクト読込 | 追加・切替・名称変更の詳細と各操作の分岐 |
+| 05 フォーム | 002 FORMADD／FORMSWITCH／EDITとプロジェクト読込 | 名称変更の詳細と各操作の分岐 |
 | 06 部品配置 | 002 EDIT／INVALID／CLIP／ALIGN | 部品種類ごとの表示・操作詳細 |
 | 07 プロパティ・Undo | 002 EDIT／UNDO／UNDODELETE／UNDOAFTERSAVE | 保存後のRedo等の詳細確認 |
 | 08 イベント | 002 EVENT／COPY／RENAME／DELETE | Load等の対象別イベントと引数の扱い |
@@ -51,3 +51,7 @@ Workset・IFDAM・Interactionの最終境界、人間向け固定Snapshot、正�
 この表はレビューの初稿。正式な受入・Baseline・実装開始ではない。
 
 参照：[要求一覧](../requirements/05-requirements-list.md)、[受入条件](../requirements/18-acceptance-criteria.md)、[IFDAM一覧](README.md)
+
+## 追記：同期修正後
+
+フォーム追加・切替を追加し、全体は55 Interactionとなった。旧版の分割図７枚は全領域を目視したが、修正版の画像表示確認、Mermaidからの正式レンダリングおよび意味の完全一致は未完了。[照合・修正メモ](semantic-visual-review.md)参照。

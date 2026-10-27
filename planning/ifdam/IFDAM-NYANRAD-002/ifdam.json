@@ -133,6 +133,18 @@
       "name": "部品を整列",
       "source_interface_id": "UI-NYANRAD-002",
       "business_trigger": "部品を整列"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-FORMADD",
+      "name": "フォームを追加",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "フォームを追加"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-FORMSWITCH",
+      "name": "フォームを切り替える",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "フォームを切り替える"
     }
   ],
   "functions": [
@@ -210,7 +222,7 @@
       "name": "部品を複製する",
       "business_purpose": "フォームと画面イベントを編集する",
       "normal_result": [
-        "新しい名前で部品を複製し手書き処理本文を自動複製しない"
+        "新しい名前で複製し手書き本文は複製せず元のイベント処理の存在を示す"
       ],
       "business_rules": [
         "対象部品を選択"
@@ -221,7 +233,7 @@
       "name": "管理対象の名前を変更する",
       "business_purpose": "フォームと画面イベントを編集する",
       "normal_result": [
-        "管理対象の対応を更新し手書き本文を無条件に文字列置換しない"
+        "管理対象を更新し手書き本文への影響を示す。本文は無条件に文字列置換しない"
       ],
       "business_rules": [
         "有効で重複しない識別名を入力"
@@ -316,6 +328,28 @@
       ],
       "business_rules": [
         "整列対象を選択し基準を指定"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-FORMADD",
+      "name": "フォームを追加する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "フォームを追加し一覧に表示する"
+      ],
+      "business_rules": [
+        "有効で重複しないフォーム名を入力"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-FORMSWITCH",
+      "name": "選択したフォームを表示する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "選択したフォームを表示する"
+      ],
+      "business_rules": [
+        "対象フォームを選択"
       ]
     }
   ],
@@ -622,14 +656,15 @@
         "対象部品を選択"
       ],
       "expected_results": [
-        "新しい名前で部品を複製し手書き処理本文を自動複製しない"
+        "新しい名前で複製し手書き本文は複製せず元のイベント処理の存在を示す"
       ],
       "unknown_ids": [
         "UNRESOLVED-002"
       ],
       "source_locations": [
         "planning/requirements/22-operation-decisions.md",
-        "planning/requirements/20-consolidated-requirements.md"
+        "planning/requirements/20-consolidated-requirements.md",
+        "planning/requirements/13-editing-details.md"
       ]
     },
     {
@@ -667,14 +702,15 @@
         "有効で重複しない識別名を入力"
       ],
       "expected_results": [
-        "管理対象の対応を更新し手書き本文を無条件に文字列置換しない"
+        "管理対象を更新し手書き本文への影響を示す。本文は無条件に文字列置換しない"
       ],
       "unknown_ids": [
         "UNRESOLVED-002"
       ],
       "source_locations": [
         "planning/requirements/22-operation-decisions.md",
-        "planning/requirements/20-consolidated-requirements.md"
+        "planning/requirements/20-consolidated-requirements.md",
+        "planning/requirements/13-editing-details.md"
       ]
     },
     {
@@ -967,6 +1003,81 @@
       "source_locations": [
         "planning/requirements/22-operation-decisions.md",
         "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-FORMADD",
+      "name": "フォームを追加する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-FORMADD",
+      "function_id": "FN-NYANRAD-002-FORMADD",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R",
+            "C"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "有効で重複しないフォーム名を入力"
+      ],
+      "expected_results": [
+        "フォームを追加し一覧に表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-FORMSWITCH",
+      "name": "選択したフォームを表示する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-FORMSWITCH",
+      "function_id": "FN-NYANRAD-002-FORMSWITCH",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "R",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "対象フォームを選択"
+      ],
+      "expected_results": [
+        "選択したフォームを表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
       ]
     }
   ],

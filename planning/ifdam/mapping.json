@@ -956,6 +956,42 @@
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
       "structured_pointer": "/interactions/17"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "interaction_id": "INT-NYANRAD-002-FORMADD",
+      "source_commit": "042a2b9d1eba3fa00bc080c03ffacbc3d9124a74",
+      "source_path": "planning/requirements/09-functions.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-002/review.md",
+      "human_row": 17,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.svg",
+      "diagram_row": 17,
+      "mermaid_nodes": [
+        "U16",
+        "F16",
+        "D16",
+        "R16"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
+      "structured_pointer": "/interactions/16"
+    },
+    {
+      "ifdam_id": "IFDAM-NYANRAD-002",
+      "interaction_id": "INT-NYANRAD-002-FORMSWITCH",
+      "source_commit": "042a2b9d1eba3fa00bc080c03ffacbc3d9124a74",
+      "source_path": "planning/requirements/09-functions.md",
+      "human_review_path": "planning/ifdam/IFDAM-NYANRAD-002/review.md",
+      "human_row": 18,
+      "rendered_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.svg",
+      "diagram_row": 18,
+      "mermaid_nodes": [
+        "U17",
+        "F17",
+        "D17",
+        "R17"
+      ],
+      "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
+      "structured_pointer": "/interactions/17"
     }
   ],
   "updated_at": "2026-10-27"

@@ -12,7 +12,7 @@
 | INT-NYANRAD-001-OPEN | normal | 対象ソースを読み込める | 内容と再編集可能範囲を表示する |
 | INT-NYANRAD-001-SAVE | normal | 競合がなく保存できる | 対象別の保存結果を表示する |
 | INT-NYANRAD-001-CONFLICT | exception | 外部で対象が変更された | 差分と再読込・明示上書き・中止の選択を示す |
-| INT-NYANRAD-001-SAVEFAIL | exception | 全部または一部の保存が失敗 | 未保存内容と失敗対象を保持して表示し新規実行を止める |
+| INT-NYANRAD-001-SAVEFAIL | exception | 全部または一部の保存が失敗 | 未保存内容と失敗対象を示す。一部保存状態では新規実行を止める |
 | INT-NYANRAD-001-EXISTS | exception | 作成先に既存ファイルがある | 生成せず別の場所・中止を示す |
 | INT-NYANRAD-001-RELOAD | alternative | 差分を確認し対象の未保存変更の破棄を承認 | 保存先を残して対象だけ読み直し他の未保存変更を保持する |
 | INT-NYANRAD-001-OVERWRITE | alternative | 対象と外部変更の置換を明示確認し確認後の再変更がない | 対象だけ保存し結果を示す |

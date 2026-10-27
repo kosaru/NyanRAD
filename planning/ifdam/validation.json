@@ -3,23 +3,26 @@
   "schema_repository": "kosaru/AI-powered-development",
   "schema_path": "schemas/ifdam.schema.yaml",
   "schema_blob": "84b70d9377b467c28ab4aeecf620201446bb9876",
-  "source_commit": "1157fd02b0012b31f0383af3d9c5919b8b9e920a",
+  "source_commit": "042a2b9d1eba3fa00bc080c03ffacbc3d9124a74",
+  "note": "source_commit は修正前に確認した資料起点。検証対象は同じ更新で保存される資料。",
   "ifdams": 4,
-  "interactions": 53,
+  "interactions": 55,
   "checks": {
-    "schema": "pass",
+    "schema": "pass (Draft 2020-12)",
     "id_uniqueness_across_ifdams": "pass",
-    "event_source_and_internal_references": "pass",
-    "mapping_json_pointers_and_mermaid_nodes": "pass",
-    "svg_xml": "pass",
-    "quicklook_render": "pass（４図画像生成し各図の先頭側を目視）"
+    "event_source_and_internal_references": "pass (interaction references)",
+    "mapping_json_pointers": "pass",
+    "review_rows_and_mermaid_results": "pass",
+    "svg_xml": "pass (更新11ファイル)",
+    "visual": "旧版は７分割を目視、修正版の画像表示は未確認"
   },
   "not_verified": [
-    "全SVG領域の目視",
+    "修正後SVGの画像表示・全領域の可読性",
+    "Mermaidからの正式レンダリング",
     "全要求・例外のInteraction網羅性",
     "図と構造化資料の意味の完全一致",
     "DB・接続の４組の実行",
-    "人間の承認",
+    "人間の正式承認",
     "実行管理の動作"
   ],
   "formal_candidate_ready": false
