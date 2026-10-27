@@ -73,6 +73,54 @@
       "name": "新規作成",
       "source_interface_id": "UI-NYANRAD-001",
       "business_trigger": "新規作成"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-RELOAD",
+      "name": "競合：保存先を読み直す",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "競合：保存先を読み直す"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-OVERWRITE",
+      "name": "競合：編集内容で上書き",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "競合：編集内容で上書き"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-CANCEL",
+      "name": "競合：中止",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "競合：中止"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-RECHECK",
+      "name": "競合：確認後に再変更",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "競合：確認後に再変更"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-SWITCHSAVE",
+      "name": "未保存で切替：保存",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "未保存で切替：保存"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-SWITCHDISCARD",
+      "name": "未保存で切替：破棄",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "未保存で切替：破棄"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-SWITCHCANCEL",
+      "name": "未保存で切替：中止",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "未保存で切替：中止"
+    },
+    {
+      "event_id": "EVT-NYANRAD-001-SWITCHFAIL",
+      "name": "未保存で切替：保存失敗",
+      "source_interface_id": "UI-NYANRAD-001",
+      "business_trigger": "未保存で切替：保存失敗"
     }
   ],
   "functions": [
@@ -149,6 +197,100 @@
       ],
       "exception_results": [
         "生成せず別の場所・中止を示す"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-RELOAD",
+      "name": "対象の外部変更を読み直す",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "差分を確認し対象の未保存変更の破棄を承認"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-OVERWRITE",
+      "name": "外部変更を明示的に置き換える",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "対象と外部変更の置換を明示確認し確認後の再変更がない"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-CANCEL",
+      "name": "競合の解決を中止する",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "競合画面で中止"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-RECHECK",
+      "name": "再変更の差分を再確認する",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "利用者の判断後に保存先が変わった"
+      ],
+      "exception_results": [
+        "古い確認で保存せず差分確認に戻る"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-SWITCHSAVE",
+      "name": "未保存内容を保存して切り替える",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "未保存で切替時に保存を選び保存に成功"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-SWITCHDISCARD",
+      "name": "対象の未保存変更を破棄して切り替える",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "未保存で切替時に破棄を選択"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-SWITCHCANCEL",
+      "name": "切替・再読込を中止する",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "未保存で切替時に中止"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-001-SWITCHFAIL",
+      "name": "保存失敗で切替を止める",
+      "business_purpose": "プロジェクトを作成・再開する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "切替前の保存が失敗"
+      ],
+      "exception_results": [
+        "成功扱いせず対象別結果と未保存内容を示す"
       ]
     }
   ],
@@ -398,6 +540,326 @@
         "planning/requirements/23-formalization-map.md",
         "planning/requirements/09-functions.md",
         "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-RELOAD",
+      "name": "対象の外部変更を読み直す",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-RELOAD",
+      "function_id": "FN-NYANRAD-001-RELOAD",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-3",
+          "operations": [
+            "R",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "差分を確認し対象の未保存変更の破棄を承認"
+      ],
+      "expected_results": [
+        "保存先を残して対象だけ読み直し他の未保存変更を保持する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-OVERWRITE",
+      "name": "外部変更を明示的に置き換える",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-OVERWRITE",
+      "function_id": "FN-NYANRAD-001-OVERWRITE",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-3",
+          "operations": [
+            "R",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "対象と外部変更の置換を明示確認し確認後の再変更がない"
+      ],
+      "expected_results": [
+        "対象だけ保存し結果を示す"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-CANCEL",
+      "name": "競合の解決を中止する",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-CANCEL",
+      "function_id": "FN-NYANRAD-001-CANCEL",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-3",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "競合画面で中止"
+      ],
+      "expected_results": [
+        "保存先と未保存編集の両方を保持する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-RECHECK",
+      "name": "再変更の差分を再確認する",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-RECHECK",
+      "function_id": "FN-NYANRAD-001-RECHECK",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-3",
+          "operations": [
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "利用者の判断後に保存先が変わった"
+      ],
+      "expected_results": [
+        "古い確認で保存せず差分確認に戻る"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-SWITCHSAVE",
+      "name": "未保存内容を保存して切り替える",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-SWITCHSAVE",
+      "function_id": "FN-NYANRAD-001-SWITCHSAVE",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-3",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "未保存で切替時に保存を選び保存に成功"
+      ],
+      "expected_results": [
+        "保存後に切替・再読込を行う"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-SWITCHDISCARD",
+      "name": "対象の未保存変更を破棄して切り替える",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-SWITCHDISCARD",
+      "function_id": "FN-NYANRAD-001-SWITCHDISCARD",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "未保存で切替時に破棄を選択"
+      ],
+      "expected_results": [
+        "対象の未保存内容を破棄し切替・再読込を行う"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-SWITCHCANCEL",
+      "name": "切替・再読込を中止する",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-SWITCHCANCEL",
+      "function_id": "FN-NYANRAD-001-SWITCHCANCEL",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "未保存で切替時に中止"
+      ],
+      "expected_results": [
+        "編集中の内容を保持する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-001-SWITCHFAIL",
+      "name": "保存失敗で切替を止める",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-001",
+      "event_id": "EVT-NYANRAD-001-SWITCHFAIL",
+      "function_id": "FN-NYANRAD-001-SWITCHFAIL",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-001-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-001-3",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-001",
+      "preconditions": [
+        "切替前の保存が失敗"
+      ],
+      "expected_results": [
+        "成功扱いせず対象別結果と未保存内容を示す"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-001"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
       ]
     }
   ],
