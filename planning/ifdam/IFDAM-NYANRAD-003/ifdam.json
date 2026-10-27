@@ -1,0 +1,237 @@
+{
+  "schema_version": "2.0",
+  "ifdam_id": "IFDAM-NYANRAD-003",
+  "name": "サーバー処理・SQLと接続を編集する",
+  "workset_id": "WS-NYANRAD-003",
+  "artifact_status": "draft",
+  "source_artifacts": [
+    {
+      "artifact_id": "HA-NYANRAD-FORMALIZATION",
+      "artifact_type": "other",
+      "repository_path": "planning/requirements/23-formalization-map.md",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_location": "利用者の仕事ごとの対応"
+    },
+    {
+      "artifact_id": "HA-NYANRAD-OPERATIONS",
+      "artifact_type": "function",
+      "repository_path": "planning/requirements/22-operation-decisions.md",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021"
+    }
+  ],
+  "human_representation": {
+    "mermaid_source_path": "planning/ifdam/IFDAM-NYANRAD-003/flow.mmd",
+    "rendered_diagram_paths": [
+      "planning/ifdam/IFDAM-NYANRAD-003/flow.svg"
+    ],
+    "review_document_paths": [
+      "planning/ifdam/IFDAM-NYANRAD-003/review.md"
+    ],
+    "mapping_manifest_path": "planning/ifdam/mapping.json"
+  },
+  "interfaces": [
+    {
+      "interface_id": "UI-NYANRAD-003",
+      "name": "製品別の処理・SQL・設定",
+      "interface_type": "screen",
+      "business_purpose": "サーバー処理・SQLと接続を編集する"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVT-NYANRAD-003-OPEN",
+      "name": "対象を開く",
+      "source_interface_id": "UI-NYANRAD-003",
+      "business_trigger": "対象を開く"
+    },
+    {
+      "event_id": "EVT-NYANRAD-003-EDIT",
+      "name": "本文・設定変更",
+      "source_interface_id": "UI-NYANRAD-003",
+      "business_trigger": "本文・設定変更"
+    },
+    {
+      "event_id": "EVT-NYANRAD-003-ERROR",
+      "name": "不正な設定を読む・編集する",
+      "source_interface_id": "UI-NYANRAD-003",
+      "business_trigger": "不正な設定を読む・編集する"
+    }
+  ],
+  "functions": [
+    {
+      "function_id": "FN-NYANRAD-003-OPEN",
+      "name": "製品別ソースを取得する",
+      "business_purpose": "サーバー処理・SQLと接続を編集する",
+      "normal_result": [
+        "製品・実行場所・ソースを表示する"
+      ],
+      "business_rules": [
+        "対象を読み込める"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-003-EDIT",
+      "name": "処理と接続の編集内容を反映する",
+      "business_purpose": "サーバー処理・SQLと接続を編集する",
+      "normal_result": [
+        "編集内容と未保存状態を表示する"
+      ],
+      "business_rules": [
+        "編集可能な対象を開いている"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-003-ERROR",
+      "name": "処理と設定の問題を表示する",
+      "business_purpose": "サーバー処理・SQLと接続を編集する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "設定不正・非対応表現等"
+      ],
+      "exception_results": [
+        "対象と問題を示し元ソースを保持する"
+      ]
+    }
+  ],
+  "data_stores": [
+    {
+      "data_store_id": "DS-NYANRAD-003-1",
+      "name": "サーバー処理・SQL・API・DB設定",
+      "business_meaning": "サーバー処理・SQL・API・DB設定"
+    },
+    {
+      "data_store_id": "DS-NYANRAD-003-2",
+      "name": "編集状態",
+      "business_meaning": "編集状態"
+    }
+  ],
+  "interactions": [
+    {
+      "interaction_id": "INT-NYANRAD-003-OPEN",
+      "name": "製品別ソースを取得する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-003",
+      "event_id": "EVT-NYANRAD-003-OPEN",
+      "function_id": "FN-NYANRAD-003-OPEN",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-003-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-003-2",
+          "operations": [
+            "C"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-003",
+      "preconditions": [
+        "対象を読み込める"
+      ],
+      "expected_results": [
+        "製品・実行場所・ソースを表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-003"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-003-EDIT",
+      "name": "処理と接続の編集内容を反映する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-003",
+      "event_id": "EVT-NYANRAD-003-EDIT",
+      "function_id": "FN-NYANRAD-003-EDIT",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-003-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-003-2",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-003",
+      "preconditions": [
+        "編集可能な対象を開いている"
+      ],
+      "expected_results": [
+        "編集内容と未保存状態を表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-003"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-003-ERROR",
+      "name": "処理と設定の問題を表示する",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-003",
+      "event_id": "EVT-NYANRAD-003-ERROR",
+      "function_id": "FN-NYANRAD-003-ERROR",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-003-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-003-2",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-003",
+      "preconditions": [
+        "設定不正・非対応表現等"
+      ],
+      "expected_results": [
+        "対象と問題を示し元ソースを保持する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-003"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    }
+  ],
+  "unknowns": [
+    {
+      "unknown_id": "UNRESOLVED-003",
+      "description": "提供条件と正式候補範囲が未固定。004は既存能力による実行管理の成立も未実証。",
+      "blocking_scope": "workset",
+      "affected_ids": [
+        "WS-NYANRAD-003"
+      ],
+      "blocking": true,
+      "decision_owner": "AIが整理・要求者が提供条件判断",
+      "status": "open"
+    }
+  ]
+}
