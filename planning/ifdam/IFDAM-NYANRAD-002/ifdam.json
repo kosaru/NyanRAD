@@ -109,6 +109,30 @@
       "name": "一覧表を再読込",
       "source_interface_id": "UI-NYANRAD-002",
       "business_trigger": "一覧表を再読込"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-CLIP",
+      "name": "フォーム外にはみ出す",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "フォーム外にはみ出す"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-UNDODELETE",
+      "name": "部品削除を元に戻す",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "部品削除を元に戻す"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-UNDOAFTERSAVE",
+      "name": "保存後にUndo",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "保存後にUndo"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-ALIGN",
+      "name": "部品を整列",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "部品を整列"
     }
   ],
   "functions": [
@@ -248,6 +272,50 @@
       ],
       "business_rules": [
         "一覧表を再読込"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-CLIP",
+      "name": "はみ出した部品を警告する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "配置またはフォーム寸法の変更で部品が外へ出る"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-UNDODELETE",
+      "name": "削除した部品と結線を戻す",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "部品と管理結線を戻し残る手書き本文を二重生成しない"
+      ],
+      "business_rules": [
+        "部品削除がUndoの対象である"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-UNDOAFTERSAVE",
+      "name": "保存後の編集を元に戻す",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "同じ編集セッションで保存後に対象操作をUndo"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-ALIGN",
+      "name": "選択部品を整列する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "配置を反映しUndo対象とする"
+      ],
+      "business_rules": [
+        "整列対象を選択し基準を指定"
       ]
     }
   ],
@@ -733,6 +801,165 @@
       ],
       "expected_results": [
         "更新前の行選択を解除する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-CLIP",
+      "name": "はみ出した部品を警告する",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-CLIP",
+      "function_id": "FN-NYANRAD-002-CLIP",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "配置またはフォーム寸法の変更で部品が外へ出る"
+      ],
+      "expected_results": [
+        "警告し部品を自動移動・縮小・削除しない"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-UNDODELETE",
+      "name": "削除した部品と結線を戻す",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-UNDODELETE",
+      "function_id": "FN-NYANRAD-002-UNDODELETE",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R",
+            "C"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "R",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "部品削除がUndoの対象である"
+      ],
+      "expected_results": [
+        "部品と管理結線を戻し残る手書き本文を二重生成しない"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-UNDOAFTERSAVE",
+      "name": "保存後の編集を元に戻す",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-UNDOAFTERSAVE",
+      "function_id": "FN-NYANRAD-002-UNDOAFTERSAVE",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "R",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "同じ編集セッションで保存後に対象操作をUndo"
+      ],
+      "expected_results": [
+        "編集内容を戻して未保存と示し保存済みファイルを巻き戻さない"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-ALIGN",
+      "name": "選択部品を整列する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-ALIGN",
+      "function_id": "FN-NYANRAD-002-ALIGN",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "整列対象を選択し基準を指定"
+      ],
+      "expected_results": [
+        "配置を反映しUndo対象とする"
       ],
       "unknown_ids": [
         "UNRESOLVED-002"
