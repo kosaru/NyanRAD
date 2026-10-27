@@ -3,17 +3,17 @@
   "schema_repository": "kosaru/AI-powered-development",
   "schema_path": "schemas/ifdam.schema.yaml",
   "schema_blob": "84b70d9377b467c28ab4aeecf620201446bb9876",
-  "source_commit": "a0f98e6bad9f0706757421b3d05b56b2faeb4807",
-  "note": "旧版21図の表示確認の対象Commit。背景・行選択４図の更新と検証記録は本変更に含む。",
+  "source_commit": "98fee5005d0cd748d998961d209b1c202324fc14",
+  "note": "判断対象の比較案を含む変更前Commit。人間判断とその同期・検証は本更新に含む。",
   "ifdams": 4,
   "interactions": 58,
   "checks": {
-    "schema": "002構造化資料はDraft 2020-12 Schema適合",
+    "schema": "002構造化資料 Draft 2020-12 Schema 適合",
     "id_uniqueness_across_ifdams": "pass (195 IDs)",
     "event_source_and_internal_references": "pass (58 Interactionの参照)",
     "mapping_json_pointers": "pass (58 entries)",
     "review_rows_and_mermaid_results": "002の21表行と各個別図IDを照合。全表現・全要件の意味一致は未確認",
-    "svg_xml": "更新した行選択の代表SVGと白背景の代表SVGはXML解析成功",
+    "svg_xml": "今回更新したSVG３件のXML解析成功",
     "visual": "002の旧版21個別図はGit Blob一致を確認し、SVGを幅1100pxの画像に変換して全域を一覧で目視。全体図３枚も全域を確認。更新した行選択の代表１図と白背景の３ページ目を再表示",
     "cross_representation": "002の21件は表・個別図ID・参照を確認。既存の55件の旧図と構造の文字照合結果を今回の修正版の完全検証として扱わない",
     "mermaid_render": "002の21個別Mermaidから再生成。更新した全体Mermaidの正式レンダリング・全域表示は未確認",
@@ -22,17 +22,19 @@
     "github_display": "更新前版002 COPYの個別図をGitHubで開けた。狭い表示領域では小さく表示",
     "requirements_audit": "既存資料と主要方針を照合し明示不足を記録。全例外・全要件の意味一致は未完了",
     "editing_conditions": "配置・履歴・管理結線と手書き本文・サーバー編集中データを補足表と構造化資料へ同期",
-    "runtime_interface": "002 行選択・再読込４件の開始・終了Interface、イベント参照、Mermaid・SVG・対応表を確認"
+    "runtime_interface": "002 行選択・再読込４件の開始・終了Interface、イベント参照、Mermaid・SVG・対応表を確認",
+    "event_choice": "要求者がAを選択。002 EVENTの結果とデータ操作を構造・表・全体Mermaid・個別Mermaidで照合",
+    "event_diagram": "Mermaid 12.2.0で個別図を再生成し、画像を表示確認"
   },
   "not_verified": [
     "更新後の行選択４図すべてと白背景４図すべてのGitHub上の実表示",
-    "初回雛形の人間判断とその同期",
     "イベント引数の具体的な署名・値型の設計・検証",
     "全要求・例外の網羅性と意味一致",
     "正式なHuman-AI Mappingと固定Snapshot",
     "DB・接続の４組の実行",
     "人間の正式承認",
-    "実行管理の動作"
+    "実行管理の動作",
+    "初回雛形の生成コード形と既存NyanQL群との技術成立"
   ],
   "formal_candidate_ready": false
 }

@@ -73,3 +73,9 @@ SQLite・DuckDBの両方で検証する。
 人間が選んだ正確な対象Commitと、同じ内容の確認資料を基に判断する。
 
 参照：[DB範囲案](17-database-scope.md)、[要求一覧](05-requirements-list.md)、[判断一覧](11-open-decisions.md)
+
+## 2026-10-27 初回イベント処理の人間判断
+
+要求者：「Aで進めて」。対象は[A・B比較案](https://github.com/kosaru/NyanRAD/blob/98fee5005d0cd748d998961d209b1c202324fc14/planning/requirements/24-event-handler-options.md)。Aを採用する。イベント処理が未作成なら、イベントを選んで開いたとき編集用の雛形を未保存で表示し、保存時にファイルへ反映する。開いただけでは保存済みファイルを変更せず、既存の手書き本文は勝手に再生成・上書きしない。
+
+イベント引数の具体的な署名・値型、雛形のコード形、技術成立、正式Baseline・実装開始・リリースはこの判断で確定しない。

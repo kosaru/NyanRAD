@@ -24,6 +24,13 @@
       "repository_path": "planning/requirements/13-editing-details.md",
       "source_commit": "3927a126ebf4283e6310049b624cd26619c1c363",
       "source_location": "編集操作の細目案"
+    },
+    {
+      "artifact_id": "HA-NYANRAD-EVENT-OPTIONS",
+      "artifact_type": "function",
+      "repository_path": "planning/requirements/24-event-handler-options.md",
+      "source_commit": "98fee5005d0cd748d998961d209b1c202324fc14",
+      "source_location": "例：ボタンのClick処理を初めて開く"
     }
   ],
   "human_representation": {
@@ -196,10 +203,12 @@
       "name": "イベント処理を開く",
       "business_purpose": "フォームと画面イベントを編集する",
       "normal_result": [
-        "既存本文または初回の雛形を開く"
+        "既存本文を開き未作成なら未保存の雛形を表示する"
       ],
       "business_rules": [
-        "対象イベントを選択"
+        "対象イベントを選択",
+        "未作成時は編集用の雛形を未保存で表示し、開いただけでは保存済みファイルを変更しない",
+        "既存の手書き本文を勝手に再生成・上書きしない"
       ]
     },
     {
@@ -449,7 +458,7 @@
     {
       "data_store_id": "DS-NYANRAD-002-4",
       "name": "手書きイベント処理本文",
-      "business_meaning": "開発者が記述するイベント処理本文。編集中の本文と保存済みの本文を区別し、編集時の更新は保存を意味しない。"
+      "business_meaning": "開発者が記述するイベント処理本文。初回のCは未保存の編集用雛形の生成を表し、保存済みファイルへの書込みを意味しない。"
     }
   ],
   "interactions": [
@@ -518,7 +527,8 @@
         {
           "data_store_id": "DS-NYANRAD-002-4",
           "operations": [
-            "R"
+            "R",
+            "C"
           ]
         }
       ],
@@ -527,7 +537,7 @@
         "対象イベントを選択"
       ],
       "expected_results": [
-        "既存本文または初回の雛形を開く"
+        "既存本文を開き未作成なら未保存の雛形を表示する"
       ],
       "unknown_ids": [
         "UNRESOLVED-002"
@@ -535,7 +545,8 @@
       "source_locations": [
         "planning/requirements/23-formalization-map.md",
         "planning/requirements/09-functions.md",
-        "planning/requirements/10-data.md"
+        "planning/requirements/10-data.md",
+        "planning/requirements/24-event-handler-options.md"
       ]
     },
     {
@@ -1345,7 +1356,7 @@
   "unknowns": [
     {
       "unknown_id": "UNRESOLVED-002",
-      "description": "提供条件と正式候補範囲が未固定。004は既存能力による実行管理の成立も未実証。 イベント引数の具体的な署名・値型は未決定。 イベント処理の初回雛形の作成と保存の扱いは人間判断待ち。",
+      "description": "提供条件と正式候補範囲が未固定。004は既存能力による実行管理の成立も未実証。 イベント引数の具体的な署名・値型は未決定。",
       "blocking_scope": "workset",
       "affected_ids": [
         "WS-NYANRAD-002"

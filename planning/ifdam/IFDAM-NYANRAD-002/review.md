@@ -13,7 +13,7 @@
 | Interaction | 種別 | 条件 | 返す結果 |
 |---|---|---|---|
 | [INT-NYANRAD-002-EDIT](diagrams/01.svg) | normal | 入力が有効 | 変更と未保存状態を表示する |
-| [INT-NYANRAD-002-EVENT](diagrams/02.svg) | normal | 対象イベントを選択 | 既存本文または初回の雛形を開く |
+| [INT-NYANRAD-002-EVENT](diagrams/02.svg) | normal | 対象イベントを選択 | 既存本文を開き未作成なら未保存の雛形を表示する |
 | [INT-NYANRAD-002-DELETE](diagrams/03.svg) | normal | 対象部品を選択 | 部品を削除し手書き本文を保持する |
 | [INT-NYANRAD-002-UNDO](diagrams/04.svg) | normal | 対象操作の履歴がある | 編集状態を更新し保存済みファイルは自動巻戻ししない |
 | [INT-NYANRAD-002-INVALID](diagrams/05.svg) | exception | 名前重複・規則違反・不正な座標等 | 以前の値を保持し理由を表示する |
@@ -40,4 +40,4 @@
 
 一覧表の行選択・再読込は生成アプリの画面上の動作として区別する。
 
-初回のイベント処理が未作成の場合の雛形は、[動作案](../../requirements/24-event-handler-options.md)について人間の選択待ち。EVENTの記述は検討中の表現。
+初回のイベント処理が未作成の場合は、[A案](../../requirements/24-event-handler-options.md)に従い未保存の雛形を表示する。開いただけでは保存済みファイルを変更せず、既存本文を勝手に再生成しない。

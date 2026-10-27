@@ -362,7 +362,10 @@
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
       "structured_pointer": "/interactions/1",
       "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/02.mmd",
-      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/02.svg"
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/02.svg",
+      "additional_human_source_path": "planning/requirements/24-event-handler-options.md",
+      "additional_human_source_commit": "98fee5005d0cd748d998961d209b1c202324fc14",
+      "human_decision_record_path": "planning/requests/DR-NYANRAD-001/decision-log.md"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
