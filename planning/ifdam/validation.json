@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-27",
+  "schema_repository": "kosaru/AI-powered-development",
+  "schema_path": "schemas/ifdam.schema.yaml",
+  "schema_blob": "84b70d9377b467c28ab4aeecf620201446bb9876",
+  "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+  "ifdams": 4,
+  "interactions": 22,
+  "checks": {
+    "schema": "pass",
+    "id_uniqueness_within_ifdam": "pass",
+    "internal_references": "pass",
+    "mapping_json_pointers": "pass",
+    "svg_xml": "pass"
+  },
+  "not_verified": [
+    "SVGの画像としての表示確認",
+    "全要求のInteraction網羅性",
+    "Schema外の意味の完全一致",
+    "人間の承認",
+    "実行管理の動作"
+  ],
+  "formal_candidate_ready": false
+}
