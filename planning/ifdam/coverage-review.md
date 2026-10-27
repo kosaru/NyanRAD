@@ -59,3 +59,7 @@ Workset・IFDAM・Interactionの最終境界、人間向け固定Snapshot、正�
 ## 追記：修正後の表示と表現の確認
 
 修正後の７分割図を目視し、図の凡例の欠落を修正。55処理のJSON・Mermaid・SVG・表の対応文言を照合して差分なし。Mermaidから４図を一時生成したが、横幅・Interaction ID・種別・終了Interfaceの表示が承認用の課題として残る。これは要求と例外の網羅性の完了や技術的な動作実証を意味しない。[照合メモ](semantic-visual-review.md)参照。
+
+## 追記：イベントと本文の流れ
+
+002 CODEEDIT／FORMLOAD／EVENTARGSを追加して全58 Interactionとなった。Loadの条件とイベント引数の既存方針を記載したが、具体的な署名・値型、初回雛形の生成条件、全要件の意味・主要例外は引き続き未確定または未確認。DB４組の実行とIDE外利用は未実施。

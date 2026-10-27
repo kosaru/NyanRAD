@@ -1,0 +1,6 @@
+flowchart LR
+  subgraph I["INT-NYANRAD-002-FORMLOAD [normal]"]
+    U["開始：生成アプリの画面"] --> E["操作：フォームを表示"] --> F["機能：フォームLoadを呼び出す"]
+    F --> D["データ：R：IDE管理のイベント対応・結線、R：手書きイベント処理本文"]
+    F --> R["結果：フォームLoadを一度呼び出す"] --> T["終了：生成アプリの画面"]
+  end

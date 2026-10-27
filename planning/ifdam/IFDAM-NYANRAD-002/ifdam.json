@@ -17,6 +17,13 @@
       "artifact_type": "function",
       "repository_path": "planning/requirements/22-operation-decisions.md",
       "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021"
+    },
+    {
+      "artifact_id": "HA-NYANRAD-EDIT-DETAILS",
+      "artifact_type": "function",
+      "repository_path": "planning/requirements/13-editing-details.md",
+      "source_commit": "3927a126ebf4283e6310049b624cd26619c1c363",
+      "source_location": "編集操作の細目案"
     }
   ],
   "human_representation": {
@@ -35,6 +42,12 @@
       "name": "デザイン・プロパティ・コード",
       "interface_type": "screen",
       "business_purpose": "フォームと画面イベントを編集する"
+    },
+    {
+      "interface_id": "UI-NYANRAD-002-APP",
+      "name": "生成アプリの画面",
+      "interface_type": "screen",
+      "business_purpose": "フォームと部品のイベントを利用する"
     }
   ],
   "events": [
@@ -145,6 +158,24 @@
       "name": "フォームを切り替える",
       "source_interface_id": "UI-NYANRAD-002",
       "business_trigger": "フォームを切り替える"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-CODEEDIT",
+      "name": "イベント処理本文を編集",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "イベント処理本文を編集"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-FORMLOAD",
+      "name": "フォームを表示",
+      "source_interface_id": "UI-NYANRAD-002-APP",
+      "business_trigger": "フォームを表示"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-EVENTARGS",
+      "name": "フォーム・部品のイベント発生",
+      "source_interface_id": "UI-NYANRAD-002-APP",
+      "business_trigger": "フォーム・部品のイベント発生"
     }
   ],
   "functions": [
@@ -361,6 +392,42 @@
       "business_rules": [
         "対象フォームを選択"
       ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-CODEEDIT",
+      "name": "手書き本文を編集する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "編集中の本文と未保存状態を表示する"
+      ],
+      "business_rules": [
+        "対象イベントの処理を開いている",
+        "保存済みの本文と編集中の本文を区別する"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-FORMLOAD",
+      "name": "フォームLoadを呼び出す",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "フォームLoadを一度呼び出す"
+      ],
+      "business_rules": [
+        "対象DOMとIDE管理の結線が利用可能",
+        "全画像の読込完了や任意の非同期初期化完了とは同一視しない"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-EVENTARGS",
+      "name": "イベント引数を処理へ渡す",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "対象・現在値・ブラウザイベント等を実行場所に応じ明示的な引数で渡す"
+      ],
+      "business_rules": [
+        "対象のイベント処理を呼び出す",
+        "引数の署名と値型は未決定"
+      ]
     }
   ],
   "data_stores": [
@@ -371,13 +438,18 @@
     },
     {
       "data_store_id": "DS-NYANRAD-002-2",
-      "name": "イベント対応・手書き本文",
-      "business_meaning": "IDE管理のイベント対応・結線と手書き本文。管理対象の変更と本文の保持を区別する。"
+      "name": "IDE管理のイベント対応・結線",
+      "business_meaning": "IDEが管理するイベントと処理の対応・結線。手書き本文と区別する。"
     },
     {
       "data_store_id": "DS-NYANRAD-002-3",
       "name": "編集状態・履歴",
       "business_meaning": "編集状態・履歴"
+    },
+    {
+      "data_store_id": "DS-NYANRAD-002-4",
+      "name": "手書きイベント処理本文",
+      "business_meaning": "開発者が記述するイベント処理本文。編集中の本文と保存済みの本文を区別し、編集時の更新は保存を意味しない。"
     }
   ],
   "interactions": [
@@ -442,6 +514,12 @@
             "C",
             "U"
           ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-4",
+          "operations": [
+            "R"
+          ]
         }
       ],
       "end_interface_id": "UI-NYANRAD-002",
@@ -487,6 +565,12 @@
           "operations": [
             "C",
             "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-4",
+          "operations": [
+            "R"
           ]
         }
       ],
@@ -534,6 +618,12 @@
           "operations": [
             "R",
             "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-4",
+          "operations": [
+            "R"
           ]
         }
       ],
@@ -618,6 +708,12 @@
             "C",
             "U"
           ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-4",
+          "operations": [
+            "R"
+          ]
         }
       ],
       "end_interface_id": "UI-NYANRAD-002",
@@ -662,6 +758,12 @@
           "operations": [
             "C",
             "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-4",
+          "operations": [
+            "R"
           ]
         }
       ],
@@ -709,6 +811,12 @@
             "C",
             "U"
           ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-4",
+          "operations": [
+            "R"
+          ]
         }
       ],
       "end_interface_id": "UI-NYANRAD-002",
@@ -746,6 +854,12 @@
           "operations": [
             "R"
           ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-4",
+          "operations": [
+            "R"
+          ]
         }
       ],
       "end_interface_id": "UI-NYANRAD-002",
@@ -779,6 +893,12 @@
         },
         {
           "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-4",
           "operations": [
             "R"
           ]
@@ -925,6 +1045,12 @@
           "operations": [
             "R",
             "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-4",
+          "operations": [
+            "R"
           ]
         }
       ],
@@ -1095,12 +1221,131 @@
         "planning/requirements/09-functions.md",
         "planning/requirements/10-data.md"
       ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-CODEEDIT",
+      "name": "手書き本文を編集する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-CODEEDIT",
+      "function_id": "FN-NYANRAD-002-CODEEDIT",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-4",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "対象イベントの処理を開いている"
+      ],
+      "expected_results": [
+        "編集中の本文と未保存状態を表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/13-editing-details.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-FORMLOAD",
+      "name": "フォームLoadを呼び出す",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002-APP",
+      "event_id": "EVT-NYANRAD-002-FORMLOAD",
+      "function_id": "FN-NYANRAD-002-FORMLOAD",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-4",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002-APP",
+      "preconditions": [
+        "対象DOMとIDE管理の結線が利用可能"
+      ],
+      "expected_results": [
+        "フォームLoadを一度呼び出す"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/13-editing-details.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-EVENTARGS",
+      "name": "イベント引数を処理へ渡す",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002-APP",
+      "event_id": "EVT-NYANRAD-002-EVENTARGS",
+      "function_id": "FN-NYANRAD-002-EVENTARGS",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-4",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002-APP",
+      "preconditions": [
+        "対象のイベント処理を呼び出す"
+      ],
+      "expected_results": [
+        "対象・現在値・ブラウザイベント等を実行場所に応じ明示的な引数で渡す"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/13-editing-details.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
     }
   ],
   "unknowns": [
     {
       "unknown_id": "UNRESOLVED-002",
-      "description": "提供条件と正式候補範囲が未固定。004は既存能力による実行管理の成立も未実証。",
+      "description": "提供条件と正式候補範囲が未固定。004は既存能力による実行管理の成立も未実証。 イベント引数の具体的な署名・値型は未決定。",
       "blocking_scope": "workset",
       "affected_ids": [
         "WS-NYANRAD-002"

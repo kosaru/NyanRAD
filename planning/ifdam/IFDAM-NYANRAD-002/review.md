@@ -1,12 +1,14 @@
 # フォームと画面イベントを編集する：IFDAM確認用初稿
 
-![処理フロー 1/2](flow-01.svg)
+![処理フロー 1/3](flow-01.svg)
 
-![処理フロー 2/2](flow-02.svg)
+![処理フロー 2/3](flow-02.svg)
 
-[全体図](flow.svg)（分割図の重複行は見切れ防止のため）
+![処理フロー 3/3](flow-03.svg)
 
-各処理のIDを選ぶと、開始画面・操作・機能・データ・結果・終了画面を示す個別図を開けます。条件は下表をご覧ください。
+[全体図](flow.svg)
+
+各処理のIDを選ぶと、開始画面・操作・機能・データ・結果・終了画面を示す個別図を開けます。条件は下表をご覧ください。生成アプリの実行時の処理とIDEの編集操作は別の画面として示します。
 
 | Interaction | 種別 | 条件 | 返す結果 |
 |---|---|---|---|
@@ -28,6 +30,9 @@
 | [INT-NYANRAD-002-ALIGN](diagrams/16.svg) | normal | 整列対象を選択し基準を指定 | 配置を反映しUndo対象とする |
 | [INT-NYANRAD-002-FORMADD](diagrams/17.svg) | normal | 有効で重複しないフォーム名を入力 | フォームを追加し一覧に表示する |
 | [INT-NYANRAD-002-FORMSWITCH](diagrams/18.svg) | normal | 対象フォームを選択 | 選択したフォームを表示する |
+| [INT-NYANRAD-002-CODEEDIT](diagrams/19.svg) | normal | 対象イベントの処理を開いている | 編集中の本文と未保存状態を表示する |
+| [INT-NYANRAD-002-FORMLOAD](diagrams/20.svg) | normal | 対象DOMとIDE管理の結線が利用可能 | フォームLoadを一度呼び出す |
+| [INT-NYANRAD-002-EVENTARGS](diagrams/21.svg) | normal | 対象のイベント処理を呼び出す | 対象・現在値・ブラウザイベント等を実行場所に応じ明示的な引数で渡す |
 
 検討中の部分集合。未実証の技術成立や提供条件を含み、正式候補・Baseline・実装開始は未成立。DB動作やIDE外実行の検証組合せは[網羅性確認表](../coverage-review.md)で追跡。
 
