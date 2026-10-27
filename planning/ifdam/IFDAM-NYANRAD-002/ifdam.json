@@ -73,6 +73,42 @@
       "name": "ソース再読込",
       "source_interface_id": "UI-NYANRAD-002",
       "business_trigger": "ソース再読込"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-COPY",
+      "name": "部品をコピー",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "部品をコピー"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-RENAME",
+      "name": "部品名を変更",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "部品名を変更"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-ROWKEY",
+      "name": "一覧表の行を選ぶ",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "一覧表の行を選ぶ"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-ROWINDEX",
+      "name": "一覧表の行を選ぶ",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "一覧表の行を選ぶ"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-ROWDUP",
+      "name": "一覧表の行を選ぶ",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "一覧表の行を選ぶ"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-ROWRELOAD",
+      "name": "一覧表を再読込",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "一覧表を再読込"
     }
   ],
   "functions": [
@@ -143,6 +179,75 @@
       ],
       "business_rules": [
         "非対応または解析できない表現がある"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-COPY",
+      "name": "部品を複製する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "新しい名前で部品を複製し手書き処理本文を自動複製しない"
+      ],
+      "business_rules": [
+        "対象部品を選択"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-RENAME",
+      "name": "管理対象の名前を変更する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "管理対象の対応を更新し手書き本文を無条件に文字列置換しない"
+      ],
+      "business_rules": [
+        "有効で重複しない識別名を入力"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-ROWKEY",
+      "name": "行キーと行データを渡す",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "キーとその時点の行データを渡す"
+      ],
+      "business_rules": [
+        "行キーが指定済みで欠落・重複しない"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-ROWINDEX",
+      "name": "行番号と行データを渡す",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "行キーが未指定"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-ROWDUP",
+      "name": "曖昧な行キーを拒否する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "指定行キーが欠落または重複"
+      ],
+      "exception_results": [
+        "問題を示し曖昧な結果を渡さない"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-ROWRELOAD",
+      "name": "再読込時の行選択を解除する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "更新前の行選択を解除する"
+      ],
+      "business_rules": [
+        "一覧表を再読込"
       ]
     }
   ],
@@ -413,6 +518,228 @@
         "planning/requirements/23-formalization-map.md",
         "planning/requirements/09-functions.md",
         "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-COPY",
+      "name": "部品を複製する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-COPY",
+      "function_id": "FN-NYANRAD-002-COPY",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R",
+            "C"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "対象部品を選択"
+      ],
+      "expected_results": [
+        "新しい名前で部品を複製し手書き処理本文を自動複製しない"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-RENAME",
+      "name": "管理対象の名前を変更する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-RENAME",
+      "function_id": "FN-NYANRAD-002-RENAME",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "有効で重複しない識別名を入力"
+      ],
+      "expected_results": [
+        "管理対象の対応を更新し手書き本文を無条件に文字列置換しない"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-ROWKEY",
+      "name": "行キーと行データを渡す",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-ROWKEY",
+      "function_id": "FN-NYANRAD-002-ROWKEY",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "行キーが指定済みで欠落・重複しない"
+      ],
+      "expected_results": [
+        "キーとその時点の行データを渡す"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-ROWINDEX",
+      "name": "行番号と行データを渡す",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-ROWINDEX",
+      "function_id": "FN-NYANRAD-002-ROWINDEX",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "行キーが未指定"
+      ],
+      "expected_results": [
+        "その時点の行番号であると示し行データを渡す"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-ROWDUP",
+      "name": "曖昧な行キーを拒否する",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-ROWDUP",
+      "function_id": "FN-NYANRAD-002-ROWDUP",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "指定行キーが欠落または重複"
+      ],
+      "expected_results": [
+        "問題を示し曖昧な結果を渡さない"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-ROWRELOAD",
+      "name": "再読込時の行選択を解除する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-ROWRELOAD",
+      "function_id": "FN-NYANRAD-002-ROWRELOAD",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "一覧表を再読込"
+      ],
+      "expected_results": [
+        "更新前の行選択を解除する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/22-operation-decisions.md",
+        "planning/requirements/20-consolidated-requirements.md"
       ]
     }
   ],
