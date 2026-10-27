@@ -5,6 +5,8 @@ VB6のように部品を配置して画面を作り、生成物をソースコ�
 
 現在は人間の明示承認を受け、要件定義に着手しています。企画確認書は初稿です。正式Baseline・実装開始は未成立です。
 
+- [初期版の統合確認資料](planning/requirements/20-consolidated-requirements.md)
+- [残件の分類と進め方](planning/requirements/21-remaining-items.md)
 - [企画確認書（初稿）](planning/requirements/01-project-brief.md)
 - [進捗一覧・次の作業](planning/progress.md)
 - [全体追跡Issue](https://github.com/kosaru/NyanRAD/issues/1)
