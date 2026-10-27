@@ -1,0 +1,432 @@
+{
+  "schema_version": "2.0",
+  "ifdam_id": "IFDAM-NYANRAD-002",
+  "name": "フォームと画面イベントを編集する",
+  "workset_id": "WS-NYANRAD-002",
+  "artifact_status": "draft",
+  "source_artifacts": [
+    {
+      "artifact_id": "HA-NYANRAD-FORMALIZATION",
+      "artifact_type": "other",
+      "repository_path": "planning/requirements/23-formalization-map.md",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021",
+      "source_location": "利用者の仕事ごとの対応"
+    },
+    {
+      "artifact_id": "HA-NYANRAD-OPERATIONS",
+      "artifact_type": "function",
+      "repository_path": "planning/requirements/22-operation-decisions.md",
+      "source_commit": "e24b66a2df194bc368a2a02ef0ca4e3dad89f021"
+    }
+  ],
+  "human_representation": {
+    "mermaid_source_path": "planning/ifdam/IFDAM-NYANRAD-002/flow.mmd",
+    "rendered_diagram_paths": [
+      "planning/ifdam/IFDAM-NYANRAD-002/flow.svg"
+    ],
+    "review_document_paths": [
+      "planning/ifdam/IFDAM-NYANRAD-002/review.md"
+    ],
+    "mapping_manifest_path": "planning/ifdam/mapping.json"
+  },
+  "interfaces": [
+    {
+      "interface_id": "UI-NYANRAD-002",
+      "name": "デザイン・プロパティ・コード",
+      "interface_type": "screen",
+      "business_purpose": "フォームと画面イベントを編集する"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVT-NYANRAD-002-EDIT",
+      "name": "配置・プロパティ変更",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "配置・プロパティ変更"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-EVENT",
+      "name": "イベント選択",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "イベント選択"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-DELETE",
+      "name": "部品削除",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "部品削除"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-UNDO",
+      "name": "Undo・Redo",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "Undo・Redo"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-INVALID",
+      "name": "名前・配置値変更",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "名前・配置値変更"
+    },
+    {
+      "event_id": "EVT-NYANRAD-002-UNSUPPORTED",
+      "name": "ソース再読込",
+      "source_interface_id": "UI-NYANRAD-002",
+      "business_trigger": "ソース再読込"
+    }
+  ],
+  "functions": [
+    {
+      "function_id": "FN-NYANRAD-002-EDIT",
+      "name": "フォームと部品を編集する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "変更と未保存状態を表示する"
+      ],
+      "business_rules": [
+        "入力が有効"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-EVENT",
+      "name": "イベント処理を開く",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "既存本文または初回の雛形を開く"
+      ],
+      "business_rules": [
+        "対象イベントを選択"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-DELETE",
+      "name": "部品と管理結線を削除する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "部品を削除し手書き本文を保持する"
+      ],
+      "business_rules": [
+        "対象部品を選択"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-UNDO",
+      "name": "配置等の編集を戻す・再適用する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "編集状態を更新し保存済みファイルは自動巻戻ししない"
+      ],
+      "business_rules": [
+        "対象操作の履歴がある"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-INVALID",
+      "name": "不正な変更を拒否する",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "名前重複・規則違反・不正な座標等"
+      ],
+      "exception_results": [
+        "以前の値を保持し理由を表示する"
+      ]
+    },
+    {
+      "function_id": "FN-NYANRAD-002-UNSUPPORTED",
+      "name": "再編集範囲を示す",
+      "business_purpose": "フォームと画面イベントを編集する",
+      "normal_result": [
+        "該当条件を判別し結果を返す"
+      ],
+      "business_rules": [
+        "非対応または解析できない表現がある"
+      ]
+    }
+  ],
+  "data_stores": [
+    {
+      "data_store_id": "DS-NYANRAD-002-1",
+      "name": "フォーム・部品・プロパティ",
+      "business_meaning": "フォーム・部品・プロパティ"
+    },
+    {
+      "data_store_id": "DS-NYANRAD-002-2",
+      "name": "イベント対応・手書き本文",
+      "business_meaning": "イベント対応・手書き本文"
+    },
+    {
+      "data_store_id": "DS-NYANRAD-002-3",
+      "name": "編集状態・履歴",
+      "business_meaning": "編集状態・履歴"
+    }
+  ],
+  "interactions": [
+    {
+      "interaction_id": "INT-NYANRAD-002-EDIT",
+      "name": "フォームと部品を編集する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-EDIT",
+      "function_id": "FN-NYANRAD-002-EDIT",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R",
+            "C",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "入力が有効"
+      ],
+      "expected_results": [
+        "変更と未保存状態を表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-EVENT",
+      "name": "イベント処理を開く",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-EVENT",
+      "function_id": "FN-NYANRAD-002-EVENT",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "対象イベントを選択"
+      ],
+      "expected_results": [
+        "既存本文または初回の雛形を開く"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-DELETE",
+      "name": "部品と管理結線を削除する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-DELETE",
+      "function_id": "FN-NYANRAD-002-DELETE",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R",
+            "D"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "対象部品を選択"
+      ],
+      "expected_results": [
+        "部品を削除し手書き本文を保持する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-UNDO",
+      "name": "配置等の編集を戻す・再適用する",
+      "flow_type": "normal",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-UNDO",
+      "function_id": "FN-NYANRAD-002-UNDO",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R",
+            "U"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "R",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "対象操作の履歴がある"
+      ],
+      "expected_results": [
+        "編集状態を更新し保存済みファイルは自動巻戻ししない"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-INVALID",
+      "name": "不正な変更を拒否する",
+      "flow_type": "exception",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-INVALID",
+      "function_id": "FN-NYANRAD-002-INVALID",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "R"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "名前重複・規則違反・不正な座標等"
+      ],
+      "expected_results": [
+        "以前の値を保持し理由を表示する"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    },
+    {
+      "interaction_id": "INT-NYANRAD-002-UNSUPPORTED",
+      "name": "再編集範囲を示す",
+      "flow_type": "alternative",
+      "start_interface_id": "UI-NYANRAD-002",
+      "event_id": "EVT-NYANRAD-002-UNSUPPORTED",
+      "function_id": "FN-NYANRAD-002-UNSUPPORTED",
+      "data_store_operations": [
+        {
+          "data_store_id": "DS-NYANRAD-002-1",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-2",
+          "operations": [
+            "R"
+          ]
+        },
+        {
+          "data_store_id": "DS-NYANRAD-002-3",
+          "operations": [
+            "C",
+            "U"
+          ]
+        }
+      ],
+      "end_interface_id": "UI-NYANRAD-002",
+      "preconditions": [
+        "非対応または解析できない表現がある"
+      ],
+      "expected_results": [
+        "ソースを保持し編集制限の範囲と理由を示す"
+      ],
+      "unknown_ids": [
+        "UNRESOLVED-002"
+      ],
+      "source_locations": [
+        "planning/requirements/23-formalization-map.md",
+        "planning/requirements/09-functions.md",
+        "planning/requirements/10-data.md"
+      ]
+    }
+  ],
+  "unknowns": [
+    {
+      "unknown_id": "UNRESOLVED-002",
+      "description": "提供条件と正式候補範囲が未固定。004は既存能力による実行管理の成立も未実証。",
+      "blocking_scope": "workset",
+      "affected_ids": [
+        "WS-NYANRAD-002"
+      ],
+      "blocking": true,
+      "decision_owner": "AIが整理・要求者が提供条件判断",
+      "status": "open"
+    }
+  ]
+}
