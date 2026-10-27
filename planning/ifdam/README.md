@@ -21,3 +21,5 @@ Schema適合を要件承認・正式Baseline・引渡し可能・実装開始へ
 Schema出典：kosaru/AI-powered-development の schemas/ifdam.schema.yaml、Blob 84b70d9377b467c28ab4aeecf620201446bb9876。コピーは検証用固定参照。
 
 [照合・修正メモ](semantic-visual-review.md)。図は検討用に構造化データから生成したSVGであり、Mermaidから４図の一時生成を確認したが、承認用の可読性と追跡性の改善が必要。
+
+各確認表の処理IDから、Mermaidで生成した処理単位の個別図を開ける。全55図の生成・XML解析、代表４図の表示を確認済み。全図の個別目視とGitHubでの表示確認は未実施。詳細は[照合メモ](semantic-visual-review.md)。

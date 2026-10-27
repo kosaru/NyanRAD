@@ -19,7 +19,9 @@
         "R0"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/0"
+      "structured_pointer": "/interactions/0",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/01.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/01.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -37,7 +39,9 @@
         "R1"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/1"
+      "structured_pointer": "/interactions/1",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/02.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/02.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -55,7 +59,9 @@
         "R2"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/2"
+      "structured_pointer": "/interactions/2",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/03.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/03.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -73,7 +79,9 @@
         "R3"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/3"
+      "structured_pointer": "/interactions/3",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/04.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/04.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -91,7 +99,9 @@
         "R4"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/4"
+      "structured_pointer": "/interactions/4",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/05.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/05.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -109,7 +119,9 @@
         "R5"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/5"
+      "structured_pointer": "/interactions/5",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/06.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/06.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -127,7 +139,9 @@
         "R6"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/6"
+      "structured_pointer": "/interactions/6",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/07.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/07.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -145,7 +159,9 @@
         "R7"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/7"
+      "structured_pointer": "/interactions/7",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/08.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/08.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -163,7 +179,9 @@
         "R8"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/8"
+      "structured_pointer": "/interactions/8",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/09.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/09.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -181,7 +199,9 @@
         "R9"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/9"
+      "structured_pointer": "/interactions/9",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/10.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/10.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -199,7 +219,9 @@
         "R10"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/10"
+      "structured_pointer": "/interactions/10",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/11.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/11.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -217,7 +239,9 @@
         "R11"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/11"
+      "structured_pointer": "/interactions/11",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/12.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/12.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -235,7 +259,9 @@
         "R12"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/12"
+      "structured_pointer": "/interactions/12",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/13.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/13.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -253,7 +279,9 @@
         "R13"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/13"
+      "structured_pointer": "/interactions/13",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/14.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/14.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -271,7 +299,9 @@
         "R14"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/14"
+      "structured_pointer": "/interactions/14",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/15.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/15.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-001",
@@ -289,7 +319,9 @@
         "R15"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-001/ifdam.json",
-      "structured_pointer": "/interactions/15"
+      "structured_pointer": "/interactions/15",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/16.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-001/diagrams/16.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -307,7 +339,9 @@
         "R0"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/0"
+      "structured_pointer": "/interactions/0",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/01.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/01.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -325,7 +359,9 @@
         "R1"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/1"
+      "structured_pointer": "/interactions/1",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/02.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/02.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -343,7 +379,9 @@
         "R2"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/2"
+      "structured_pointer": "/interactions/2",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/03.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/03.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -361,7 +399,9 @@
         "R3"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/3"
+      "structured_pointer": "/interactions/3",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/04.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/04.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -379,7 +419,9 @@
         "R4"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/4"
+      "structured_pointer": "/interactions/4",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/05.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/05.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -397,7 +439,9 @@
         "R5"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/5"
+      "structured_pointer": "/interactions/5",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/06.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/06.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -415,7 +459,9 @@
         "R6"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/6"
+      "structured_pointer": "/interactions/6",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/07.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/07.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -433,7 +479,9 @@
         "R7"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/7"
+      "structured_pointer": "/interactions/7",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/08.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/08.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -451,7 +499,9 @@
         "R8"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/8"
+      "structured_pointer": "/interactions/8",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/09.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/09.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -469,7 +519,9 @@
         "R9"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/9"
+      "structured_pointer": "/interactions/9",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/10.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/10.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -487,7 +539,9 @@
         "R10"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/10"
+      "structured_pointer": "/interactions/10",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/11.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/11.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -505,7 +559,9 @@
         "R11"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/11"
+      "structured_pointer": "/interactions/11",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/12.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/12.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -523,7 +579,9 @@
         "R12"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/12"
+      "structured_pointer": "/interactions/12",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/13.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/13.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -541,7 +599,9 @@
         "R13"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/13"
+      "structured_pointer": "/interactions/13",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/14.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/14.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -559,7 +619,9 @@
         "R14"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/14"
+      "structured_pointer": "/interactions/14",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/15.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/15.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -577,7 +639,9 @@
         "R15"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/15"
+      "structured_pointer": "/interactions/15",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/16.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/16.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-003",
@@ -595,7 +659,9 @@
         "R0"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-003/ifdam.json",
-      "structured_pointer": "/interactions/0"
+      "structured_pointer": "/interactions/0",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-003/diagrams/01.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-003/diagrams/01.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-003",
@@ -613,7 +679,9 @@
         "R1"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-003/ifdam.json",
-      "structured_pointer": "/interactions/1"
+      "structured_pointer": "/interactions/1",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-003/diagrams/02.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-003/diagrams/02.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-003",
@@ -631,7 +699,9 @@
         "R2"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-003/ifdam.json",
-      "structured_pointer": "/interactions/2"
+      "structured_pointer": "/interactions/2",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-003/diagrams/03.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-003/diagrams/03.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -649,7 +719,9 @@
         "R0"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/0"
+      "structured_pointer": "/interactions/0",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/01.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/01.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -667,7 +739,9 @@
         "R1"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/1"
+      "structured_pointer": "/interactions/1",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/02.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/02.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -685,7 +759,9 @@
         "R2"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/2"
+      "structured_pointer": "/interactions/2",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/03.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/03.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -703,7 +779,9 @@
         "R3"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/3"
+      "structured_pointer": "/interactions/3",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/04.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/04.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -721,7 +799,9 @@
         "R4"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/4"
+      "structured_pointer": "/interactions/4",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/05.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/05.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -739,7 +819,9 @@
         "R5"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/5"
+      "structured_pointer": "/interactions/5",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/06.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/06.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -757,7 +839,9 @@
         "R6"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/6"
+      "structured_pointer": "/interactions/6",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/07.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/07.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -775,7 +859,9 @@
         "R7"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/7"
+      "structured_pointer": "/interactions/7",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/08.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/08.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -793,7 +879,9 @@
         "R8"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/8"
+      "structured_pointer": "/interactions/8",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/09.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/09.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -811,7 +899,9 @@
         "R9"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/9"
+      "structured_pointer": "/interactions/9",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/10.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/10.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -829,7 +919,9 @@
         "R10"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/10"
+      "structured_pointer": "/interactions/10",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/11.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/11.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -847,7 +939,9 @@
         "R11"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/11"
+      "structured_pointer": "/interactions/11",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/12.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/12.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -865,7 +959,9 @@
         "R12"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/12"
+      "structured_pointer": "/interactions/12",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/13.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/13.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -883,7 +979,9 @@
         "R13"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/13"
+      "structured_pointer": "/interactions/13",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/14.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/14.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -901,7 +999,9 @@
         "R14"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/14"
+      "structured_pointer": "/interactions/14",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/15.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/15.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -919,7 +1019,9 @@
         "R15"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/15"
+      "structured_pointer": "/interactions/15",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/16.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/16.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -937,7 +1039,9 @@
         "R16"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/16"
+      "structured_pointer": "/interactions/16",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/17.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/17.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-004",
@@ -955,7 +1059,9 @@
         "R17"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-004/ifdam.json",
-      "structured_pointer": "/interactions/17"
+      "structured_pointer": "/interactions/17",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/18.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-004/diagrams/18.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -973,7 +1079,9 @@
         "R16"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/16"
+      "structured_pointer": "/interactions/16",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/17.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/17.svg"
     },
     {
       "ifdam_id": "IFDAM-NYANRAD-002",
@@ -991,7 +1099,9 @@
         "R17"
       ],
       "structured_path": "planning/ifdam/IFDAM-NYANRAD-002/ifdam.json",
-      "structured_pointer": "/interactions/17"
+      "structured_pointer": "/interactions/17",
+      "interaction_mermaid_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/18.mmd",
+      "interaction_svg_path": "planning/ifdam/IFDAM-NYANRAD-002/diagrams/18.svg"
     }
   ],
   "updated_at": "2026-10-27"

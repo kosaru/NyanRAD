@@ -1,0 +1,6 @@
+flowchart LR
+  subgraph I["INT-NYANRAD-001-SWITCHCANCEL [alternative]"]
+    U["開始：プロジェクト操作"] --> E["操作：未保存で切替：中止"] --> F["機能：切替・再読込を中止する"]
+    F --> D["データ：R：編集中の内容"]
+    F --> R["結果：編集中の内容を保持する"] --> T["終了：プロジェクト操作"]
+  end
