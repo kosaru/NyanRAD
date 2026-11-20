@@ -35,7 +35,7 @@ T03は技術成立が未確認であることを隠さず、まず静的調査�
 
 | ID | 条件 | 確認する時点・判断主体 |
 |---|---|---|
-| P01 | macOS最低版・ブラウザ・実行ファイル版。CPUは初回Apple Siliconと判断済み | 技術実証・提供範囲を固定する前。AIが対応候補と根拠をそろえ、人間が範囲を判断 |
+| P01 | macOS・Safari・Chromeの最低版と実行ファイル版。初回CPUとブラウザー種別は判断済み | 技術実証・提供範囲を固定する前。AIが対応候補と根拠をそろえ、人間が範囲を判断 |
 | P02 | 期限・予算・ライセンス・最終受入条件 | 正式候補と提供方針の判断前。未設定から値を推測しない |
 | P03 | 初回単一リポジトリの要件保存・ブランチ対応 | 正式候補を反映する前。AIが正本と要求者の初回運用指示に合う案を作る |
 
@@ -84,3 +84,9 @@ T03の[NyanQL群のソース確認](25-runtime-capability-review.md)を更新。
 要求者は[対応Mac環境の選択肢](https://github.com/kosaru/NyanRAD/blob/0ff02627cb4c17c8e4b30eafb44b6e8ddb1943e5/planning/requirements/26-macos-scope-decision.md)に対して「A」と回答した。初回の対応対象はApple SiliconのMacとし、Intel Macは後続の判断対象とする。最低macOS版、ブラウザー、NyanQL群の実行ファイルの版は未決定。現在の作業環境での確認結果を最低対応条件や動作成功の証拠とは扱わない。
 
 HTML・CSS・JavaScriptでの構築、NyanPUIの機能と要求者提供のNyanQL群実行ファイルを利用する前提は維持する。正式な要件承認、Baseline・実装開始・Releaseの判断ではない。
+
+## 2026-11-20 初回の対応ブラウザー
+
+要求者は[対応ブラウザーの選択肢](https://github.com/kosaru/NyanRAD/blob/aeb660e47cea0c3726dadd346231d531413bc10c/planning/requirements/28-browser-scope-decision.md)に対して「A」と回答した。初回リリースの対象は、Apple SiliconのMac上のSafariとChromeの両方とする。Firefox・Edge等は今回の対象に含めず、後続の判断対象とする。
+
+最低ブラウザー版・最低macOS版、NyanQL群の実行ファイル版、両ブラウザーの実動作は未確定・未検証。HTML・CSS・JavaScriptによる構築とNyanQL群実行ファイルを使う前提は維持する。正式な要件承認、Baseline・実装開始・Releaseの判断ではない。

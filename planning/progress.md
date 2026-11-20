@@ -138,3 +138,5 @@
 - 2026-11-20：001-SWITCHFAILの個別図をMermaidから再生成し、全体図３件と元Mermaidへ編集画面に留まる結果を反映。個別図・全体図の対象部分を表示確認。４つの構造化IFDAMを固定Schemaで検証し、58件の対応表のJSON位置、個別図ID、Mermaidの結果文言を確認。意味の完全一致・データ作成元・正式Mapping・Snapshot・Baselineは未成立。
 
 - 2026-11-20：作成元が同一区分内で明示されない３データ区分について、[仕事間の追跡](ifdam/data-lineage-review.md)に元資料・関連操作・残る対応を整理。初回対応ブラウザーの[選択肢](requirements/28-browser-scope-decision.md)を作成し、人間判断待ち。正式Mapping・Snapshot・技術実証・Baselineは未成立。
+
+- 2026-11-20：初回対応ブラウザーとして要求者がA（macOS版SafariとChrome）を選択。Firefox・Edge等は後続の判断対象。関連資料へ同期。最低OS・ブラウザー版、実行ファイル版と動作検証は未完了。
