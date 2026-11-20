@@ -302,7 +302,8 @@
         "切替前の保存が失敗"
       ],
       "exception_results": [
-        "成功扱いせず対象別結果と未保存内容を示す"
+        "成功扱いせず対象別結果と未保存内容を示す",
+        "切替・再読込を行わず編集画面に留まる"
       ]
     },
     {
@@ -889,14 +890,16 @@
         "切替前の保存が失敗"
       ],
       "expected_results": [
-        "成功扱いせず対象別結果と未保存内容を示す"
+        "成功扱いせず対象別結果と未保存内容を示す",
+        "切替・再読込を行わず編集画面に留まる"
       ],
       "unknown_ids": [
         "UNRESOLVED-001"
       ],
       "source_locations": [
         "planning/requirements/22-operation-decisions.md",
-        "planning/requirements/20-consolidated-requirements.md"
+        "planning/requirements/20-consolidated-requirements.md",
+        "planning/requirements/09-functions.md"
       ]
     },
     {
