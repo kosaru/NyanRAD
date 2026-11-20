@@ -6,7 +6,7 @@
 初回はmacOSでのローカル利用を対象として要件定義を進める。Windows・Linuxの初回対応を含む判断ではない。
 リモートサービスの利用はNyanQL群側で扱う方針を維持する。専用管理サービスの追加は未採用。
 
-macOSの最低バージョン、Apple Silicon／Intelの対応範囲、ブラウザ、配布バイナリの版は未決定。現在作業中のPCの構成をそのまま対応要件にしない。
+初回のCPU対象はApple Silicon。Intel Macは後続の判断対象。macOSの最低バージョン、ブラウザ、配布バイナリの版は未決定。現在作業中のPCの構成をそのまま対応要件にしない。
 
 ## 既存基盤を使う技術案
 
@@ -47,3 +47,9 @@ NyanPUIでIDE画面と管理APIを配信し、サーバーJavaScriptから既存
 macOSでの動作試験・実装は未実施であり、正式な要件と作業指示が成立した後に実施する。
 
 関連：[既存機能の調査](04a-local-feasibility.md)、[技術比較](04-technology-options.md)
+
+## 2026-11-20 初回のMac対応範囲
+
+要求者は[対応Mac環境の選択肢](https://github.com/kosaru/NyanRAD/blob/0ff02627cb4c17c8e4b30eafb44b6e8ddb1943e5/planning/requirements/26-macos-scope-decision.md)に対して「A」と回答した。初回の対応対象はApple SiliconのMacとし、Intel Macは後続の判断対象とする。最低macOS版、ブラウザー、NyanQL群の実行ファイルの版は未決定。現在の作業環境での確認結果を最低対応条件や動作成功の証拠とは扱わない。
+
+HTML・CSS・JavaScriptでの構築、NyanPUIの機能と要求者提供のNyanQL群実行ファイルを利用する前提は維持する。正式な要件承認、Baseline・実装開始・Releaseの判断ではない。

@@ -1,6 +1,6 @@
 # NyanRAD 初回の対応Mac環境：判断材料
 
-作成日：2026-11-20。状態：選択待ち。初回がmacOSのローカル利用であること、HTML・CSS・JavaScriptで作りNyanQL群の実行ファイルを使うことは既に確認済み。本稿はその前提を変えるものではない。
+作成日：2026-11-20。状態：Aを要求者が選択済み。初回がmacOSのローカル利用であること、HTML・CSS・JavaScriptで作りNyanQL群の実行ファイルを使うことは既に確認済み。本稿はその前提を変えるものではない。
 
 ## 今回の判断
 
@@ -25,3 +25,9 @@
 - 正式な要件承認、Baseline、実装開始やリリース。
 
 関連資料：[初回提供条件](14-delivery-conditions.md)、[実行管理の静的調査](25-runtime-capability-review.md)、[残件](21-remaining-items.md)。
+
+## 2026-11-20 初回のMac対応範囲
+
+要求者は[対応Mac環境の選択肢](https://github.com/kosaru/NyanRAD/blob/0ff02627cb4c17c8e4b30eafb44b6e8ddb1943e5/planning/requirements/26-macos-scope-decision.md)に対して「A」と回答した。初回の対応対象はApple SiliconのMacとし、Intel Macは後続の判断対象とする。最低macOS版、ブラウザー、NyanQL群の実行ファイルの版は未決定。現在の作業環境での確認結果を最低対応条件や動作成功の証拠とは扱わない。
+
+HTML・CSS・JavaScriptでの構築、NyanPUIの機能と要求者提供のNyanQL群実行ファイルを利用する前提は維持する。正式な要件承認、Baseline・実装開始・Releaseの判断ではない。

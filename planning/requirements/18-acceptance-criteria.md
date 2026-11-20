@@ -79,3 +79,9 @@ SQLite・DuckDBの両方で検証する。
 要求者：「Aで進めて」。対象は[A・B比較案](https://github.com/kosaru/NyanRAD/blob/98fee5005d0cd748d998961d209b1c202324fc14/planning/requirements/24-event-handler-options.md)。Aを採用する。イベント処理が未作成なら、イベントを選んで開いたとき編集用の雛形を未保存で表示し、保存時にファイルへ反映する。開いただけでは保存済みファイルを変更せず、既存の手書き本文は勝手に再生成・上書きしない。
 
 イベント引数の具体的な署名・値型、雛形のコード形、技術成立、正式Baseline・実装開始・リリースはこの判断で確定しない。
+
+## 2026-11-20 初回のMac対応範囲
+
+要求者は[対応Mac環境の選択肢](https://github.com/kosaru/NyanRAD/blob/0ff02627cb4c17c8e4b30eafb44b6e8ddb1943e5/planning/requirements/26-macos-scope-decision.md)に対して「A」と回答した。初回の対応対象はApple SiliconのMacとし、Intel Macは後続の判断対象とする。最低macOS版、ブラウザー、NyanQL群の実行ファイルの版は未決定。現在の作業環境での確認結果を最低対応条件や動作成功の証拠とは扱わない。
+
+HTML・CSS・JavaScriptでの構築、NyanPUIの機能と要求者提供のNyanQL群実行ファイルを利用する前提は維持する。正式な要件承認、Baseline・実装開始・Releaseの判断ではない。

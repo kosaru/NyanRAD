@@ -72,3 +72,9 @@ NyanPUIとNyanQLの保存関数は引数形式が違うため、同じAPIとし�
 その後に概念データモデル、UI、機能、データを検討する。今回の一覧だけでWorkset、IFDAM、詳細API、テーブル、実装指示を確定しない。
 
 参照：[企画](01-project-brief.md)、[全体像](02-overview.md)、[区分](03-areas.md)、[技術比較](04-technology-options.md)、[macOS検証条件](04b-macos-validation.md)
+
+## 2026-11-20 初回のMac対応範囲
+
+要求者は[対応Mac環境の選択肢](https://github.com/kosaru/NyanRAD/blob/0ff02627cb4c17c8e4b30eafb44b6e8ddb1943e5/planning/requirements/26-macos-scope-decision.md)に対して「A」と回答した。初回の対応対象はApple SiliconのMacとし、Intel Macは後続の判断対象とする。最低macOS版、ブラウザー、NyanQL群の実行ファイルの版は未決定。現在の作業環境での確認結果を最低対応条件や動作成功の証拠とは扱わない。
+
+HTML・CSS・JavaScriptでの構築、NyanPUIの機能と要求者提供のNyanQL群実行ファイルを利用する前提は維持する。正式な要件承認、Baseline・実装開始・Releaseの判断ではない。

@@ -5,7 +5,7 @@
 | 条件 | 現在の証拠・残り |
 |---|---|
 | 目的・利用上の主要方針 | [統合確認資料](20-consolidated-requirements.md)と判断履歴に記録。受入条件全体は未承認 |
-| 対応環境 | macOSローカルは確認済み。CPUの範囲は[判断材料](26-macos-scope-decision.md)、最低OS版・ブラウザーと実行ファイル版は未固定 |
+| 対応環境 | macOSローカルは確認済み。初回CPUはApple Siliconを選択済み（[判断記録](26-macos-scope-decision.md)）。最低OS版・ブラウザーと実行ファイル版は未固定 |
 | UI・機能・データ・IFDAM | 初稿はある。データの作成元と仕事間の対応について[確認事項](../ifdam/data-provenance-review.md)が残る |
 | 人間向け確認資料と構造化資料 | 個別図と確認表はあるが、条件の一部が補足に分かれる。[文言上の差](../ifdam/data-provenance-review.md)と条件・例外の意味確認、画像の再確認が残る |
 | Mappingと固定Snapshot | 検討用の索引・対応表はあるが、正式Mapping・承認用Snapshotは未完成 |

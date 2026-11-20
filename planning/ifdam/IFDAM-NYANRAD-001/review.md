@@ -23,7 +23,7 @@
 | [INT-NYANRAD-001-SWITCHSAVE](diagrams/11.svg) | alternative | 未保存で切替時に保存を選び保存に成功 | 保存後に切替・再読込を行う |
 | [INT-NYANRAD-001-SWITCHDISCARD](diagrams/12.svg) | alternative | 未保存で切替時に破棄を選択 | 対象の未保存内容を破棄し切替・再読込を行う |
 | [INT-NYANRAD-001-SWITCHCANCEL](diagrams/13.svg) | alternative | 未保存で切替時に中止 | 編集中の内容を保持する |
-| [INT-NYANRAD-001-SWITCHFAIL](diagrams/14.svg) | exception | 切替前の保存が失敗 | 成功扱いせず対象別結果と未保存内容を示す |
+| [INT-NYANRAD-001-SWITCHFAIL](diagrams/14.svg) | exception | 切替前の保存が失敗 | 成功扱いせず対象別結果と未保存内容を示す。切替・再読込を行わず編集画面に留まる |
 | [INT-NYANRAD-001-EMPTYDIR](diagrams/15.svg) | alternative | 作成先が存在するが空であり生成直前に再確認できた | 作成したプロジェクトを表示する |
 | [INT-NYANRAD-001-CREATEFAIL](diagrams/16.svg) | exception | 作成途中で失敗した | 作成済み対象と失敗を示しフォルダ全体を自動削除しない |
 
