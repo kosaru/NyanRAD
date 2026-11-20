@@ -130,3 +130,5 @@
 - 2026-11-20：固定Commit `3985c2252264013863661420811a62adceb31529`の[サーバー処理・実行確認の要件照合](ifdam/runtime-semantics-review.md)を記録。003の３行・004の18行を人間向け資料と部分照合し、タブ終了時の扱い等の表外の前提と技術的未実証を整理。構造化資料・図との完全一致や正式Baselineは未成立。
 
 - 2026-11-20：固定Commit `72dafc788839f17f8de29f8d3fb259699475dfec`の002〜004・42操作について構造化資料のIDと結果文言が個別Mermaidにあることを確認。既存方針を３つの確認表へ補足し、[対応点検](ifdam/representation-check.md)に限界と残件を記録。条件・例外の完全一致やSVG表示、正式Mapping・Baselineは未確認・未成立。
+
+- 2026-11-20：58操作の条件・結果の文言照合と12データ区分の作成元の点検を行い、[未解決の対応](ifdam/data-provenance-review.md)を記録。現在の実機情報と区別して[初回の対応Mac環境の選択肢](requirements/26-macos-scope-decision.md)を作成。正式候補・実装開始は未成立。
