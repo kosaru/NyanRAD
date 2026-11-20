@@ -140,3 +140,5 @@
 - 2026-11-20：作成元が同一区分内で明示されない３データ区分について、[仕事間の追跡](ifdam/data-lineage-review.md)に元資料・関連操作・残る対応を整理。初回対応ブラウザーの[選択肢](requirements/28-browser-scope-decision.md)を作成し、人間判断待ち。正式Mapping・Snapshot・技術実証・Baselineは未成立。
 
 - 2026-11-20：初回対応ブラウザーとして要求者がA（macOS版SafariとChrome）を選択。Firefox・Edge等は後続の判断対象。関連資料へ同期。最低OS・ブラウザー版、実行ファイル版と動作検証は未完了。
+
+- 2026-11-20：NyanQL群の最新macOS配布ZIPのSHA-256・Mach-Oを実行せず確認。３製品ともarm64で、ヘッダー上の最低macOS版はNyanPUI 26.0、Nyan8 12.0、NyanQL 26.0。[調査](requirements/29-macos-binary-and-access-review.md)と[最低macOS版の選択肢](requirements/30-minimum-macos-decision.md)を作成。NyanPUIの待受範囲と管理APIのアクセス制御も技術的確認事項に追加。動作・保護の実証は未実施。

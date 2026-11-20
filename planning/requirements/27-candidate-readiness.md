@@ -13,3 +13,7 @@
 | 正式Baseline・引渡し | Candidate Package、人間の正式判断、正確なRequirement Commitと成立記録、Work Requestは未成立 |
 
 提供対象の判断を受けても、上記の未完了事項が自動的に完了するわけではない。実装を開始する正式な入力はまだ成立していない。
+
+## 2026-11-20 配布物と管理APIの確認
+
+公開macOS配布物を静的に確認し、NyanPUI・NyanQLには最低macOS 26.0、Nyan8には12.0と記録されていることを確認。[調査](29-macos-binary-and-access-review.md)と[最低版の判断材料](30-minimum-macos-decision.md)を参照。動作試験と提供版の採用は未成立。ローカル管理APIのアクセス制御・公開範囲は既存機能による成立を調べる必要がある。
